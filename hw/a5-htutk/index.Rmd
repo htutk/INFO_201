@@ -1,0 +1,57 @@
+---
+title: "2018 Shooting Incidents Analysis"
+author: "Alex Htut"
+date: "May 9, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning=FALSE)
+library(knitr)
+source("analysis.R")
+```
+
+## Summary Information
+
+This report analyzes shootings occurred in U.S. in 2018 using this [data](http://www.shootingtracker.com/) prepared by the crowdsourced shootingtracker.
+
+There were a total of `r num_of_shootings` shootings occurred in U.S. last year. A total of `r num_of_injured` people were injured while `r num_of_lives_lost` lives were lost. `r city_with_most_shooting` encountered the most number of shootings. Meanwhile, the infamous High School shooting in `r city_with_most_killed$city` caused the most lives with a total of `r city_with_most_killed$total_killed` killed. `r state_with_most_impacts$state` suffered the most shootings with `r state_with_most_impacts$total_impacts` people murdered/injured.
+
+## Monthly Summary Table
+
+_Table 1: Monthly statistic of shootings ranked by occurence_
+```{r summary_table, echo=FALSE}
+kable(monthly_stat)
+```
+
+As seen in the table, June had the most shooting occurences in 2018 with a total of 51. A total of 39 people were killed, and 218 people were injured (note that this is also the most number of people injured in a month). The trend also states that the shootings were more likely to occur in the summer; June led the chart, followed by July, August, etc. . February, which is considered the coldest month in U.S. by many, had the least amount of shooting occurences.
+
+## Largest Mass Shooting in 2018
+
+The biggest shooting in 2018 occured in `r shooting_most_killed$city`, `r shooting_most_killed$state` on `r shooting_most_killed$date`. The tragedy happened at _Stoneman Douglas High School_ during school time. A total of `r shooting_most_killed$num_injured` people were injured while `r shooting_most_killed$num_killed` people, 14 of which were students, were murdered on that day. This was regarded as the most deadliest high school shooting in U.S. and [one of the deadliest in modern US history](https://www.foxnews.com/us/florida-school-shooting-among-10-deadliest-in-modern-us-history).
+
+## Where did Shootings Occur?
+
+Visualizing the occurence of shooting on a map will help us understand where the shootings happened and how deadly they were. In the map below, the size of each circle is calculated by the amount of people each shooting had impacts on; the impact of a murder is counted twice as that of an injury. The bigger the circle is, the more people were impacted. (Note: a death has double impact of an injury.)
+
+Note that you may click each dot to review more details about each shooting.
+
+```{r map, echo=FALSE}
+map
+```
+_Fig. 1: Locations of the shooting incidents and their quick info_
+
+As seen in the map, the East Coast suffered more shootings than the West Coast in 2018. Big cities such as New York, Los Angeles, and Miami had multiple shootings with mass number of people impacted as noted by the size and density of the circles. We can also see that states like Utah and Idaho had no gun violence in 2018; it is also possible that the data source used here failed to include those particular incidents.
+
+## Impacts of Shootings in Each State
+
+How was each state impacted by the shootings? What was the total number of killed/injured due to shootings in each state? The following bar chart describes the total number of people impacted (injured and/or murdered) due to shootings in each state. The states are then ranked by the total number of impacts. The blue portion represents the total number of people injured in each state, and the orange portrays the total number of people murdered.
+
+```{r state_plot, echo=FALSE}
+state_plot
+```
+_Fig. 2: Total numbers of people impacted by the shooting in each state_
+
+This chart helps us understand which state suffered the most impacts. We can also see that the top three states (CA, FL, IL) have a huge lead over the fourth place, PA. Delaware is the only state where the total number of people killed is more than the total number of people injured; this is likely due to a single shooting where all the victims were murdered. This chart provides a basic foundation of how each state was impacted by shootings in 2018.
+
+We can then ask more complex questions and find out correlations/causations based on this chart. For further analyses, we can look into *deadly* states and reason why they experiences so many shootings. At the other side of spectrum, we can analyze why states such as Utah and Massachusetts had only a few shootings: Is it due to firearms law?, Is there a correlation between the number of college graduates and shooting occurences?, How does a particular city/neighborhood account for the number of shootings?, and so on.

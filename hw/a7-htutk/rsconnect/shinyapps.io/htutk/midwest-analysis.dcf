@@ -1,0 +1,12 @@
+name: midwest-analysis
+title: midwest-analysis
+username:
+account: htutk
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 956614
+bundleId: 2117466
+url: https://htutk.shinyapps.io/midwest-analysis/
+when: 1559192962.92588
+asMultiple: FALSE
+asStatic: FALSE

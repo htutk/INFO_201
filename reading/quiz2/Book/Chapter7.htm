@@ -1,0 +1,1424 @@
+<!--[if IE]><![endif]-->
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/programming-skills-for/9780135159071/ch01.xhtml"
+data-csrf-cookie="csrfsafari"
+data-highlight-privacy=""
+
+
+  data-user-id="4550391"
+  data-user-uuid="84c171ee-4dd7-4bd0-a2bc-254287669aaa"
+  data-username="alexhtut"
+  data-account-type="B2B"
+  
+  data-activated-trial-date=""
+
+
+  data-archive="9780135159071"
+  data-publishers="Addison-Wesley Professional"
+
+
+
+  data-htmlfile-name="ch01.xhtml"
+  data-epub-title="Programming Skills for Data Science: Start Writing Code to Wrangle, Analyze, and Visualize Data with R, First Edition" data-debug=0 data-testing=0><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class=" js flexbox flexboxlegacy no-touch no-websqldatabase indexeddb history csscolumns csstransforms localstorage sessionstorage applicationcache svg inlinesvg no-zoom" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#" itemscope="" itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/" data-offline-url="/" data-url="/library/view/programming-skills-for/9780135159071/ch01.xhtml" data-csrf-cookie="csrfsafari" data-highlight-privacy="" data-user-id="4550391" data-user-uuid="84c171ee-4dd7-4bd0-a2bc-254287669aaa" data-username="alexhtut" data-account-type="B2B" data-activated-trial-date="" data-archive="9780135159071" data-publishers="Addison-Wesley Professional" data-htmlfile-name="ch01.xhtml" data-epub-title="Programming Skills for Data Science: Start Writing Code to Wrangle, Analyze, and Visualize Data with R, First Edition" data-debug="0" data-testing="0" style="" lang="en"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="author" content="Safari Books Online"><meta name="format-detection" content="telephone=no"><meta http-equiv="cleartype" content="on"><meta name="HandheldFriendly" content="True"><meta name="MobileOptimized" content="320"><meta name="apple-itunes-app" content="app-id=881697395, app-argument=safaridetail://9780135159071"><meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0"><meta property="twitter:account_id" content="4503599627559754"><script src="Chapter7_files/nr-1118.js"></script><script async="" src="Chapter7_files/gtm.js"></script><script async="" src="Chapter7_files/analytics.js"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script><link rel="apple-touch-icon" href="https://learning.oreilly.com/static/images/apple-touch-icon.0c29511d2d72.png"><link rel="shortcut icon" href="https://learning.oreilly.com/favicon.ico" type="image/x-icon"><link href="Chapter7_files/css.css" rel="stylesheet" type="text/css"><title>7
+ Vectors - Programming Skills for Data Science: Start Writing Code to 
+Wrangle, Analyze, and Visualize Data with R, First Edition</title><link rel="stylesheet" href="Chapter7_files/1f82858304ba.css" type="text/css"><link rel="stylesheet" type="text/css" href="Chapter7_files/annotator.css"><link rel="stylesheet" href="Chapter7_files/font-awesome.css"><style type="text/css" title="ibis-book">@page{margin:1em 2em}#sbo-rt-content div{margin-top:.3em;margin-bottom:.3em;margin-left:1em;margin-right:1.3em}#sbo-rt-content h1.h1{font-size:2em;margin-top:1.5em;margin-bottom:.6em;text-align:center;font-weight:bold;page-break-after:avoid}#sbo-rt-content .part{font-size:2em;margin-top:1em;margin-bottom:1.5em;margin-right:.5em;text-align:right;font-weight:bold;page-break-after:avoid}#sbo-rt-content .h2{font-size:1.8em;margin-top:1em;margin-bottom:2.5em;font-weight:bold;page-break-after:avoid;text-align:right}#sbo-rt-content .h2a{font-size:150%;margin-top:.5em;margin-bottom:3em;font-weight:bold;page-break-after:avoid;text-align:right}#sbo-rt-content .h2c{font-size:1.7em;margin-top:1em;margin-bottom:1.3em;font-weight:bold;page-break-after:avoid;text-align:left}#sbo-rt-content h3.h3{font-size:1.4em;margin-top:1.3em;margin-bottom:.5em;font-weight:bold;page-break-after:avoid;text-align:left;margin-left:1.5em;text-indent:-1.5em}#sbo-rt-content h3.h3z{font-size:1.4em;margin-top:1.3em;margin-bottom:.5em;font-weight:bold;page-break-after:avoid;text-align:left;margin-left:2em;text-indent:-2em}#sbo-rt-content h3.h3a{font-size:1.3em;margin-top:1.2em;margin-bottom:.5em;font-weight:bold;page-break-after:avoid;text-align:left}#sbo-rt-content h4{font-size:1.2em;margin-top:1.3em;margin-bottom:.5em;font-weight:bold;page-break-after:avoid;text-align:left;margin-left:2.2em;text-indent:-2.2em}#sbo-rt-content h5{margin-top:1em;margin-bottom:.5em;font-weight:bold;font-size:105%;page-break-after:avoid;text-align:left}#sbo-rt-content h6{margin-top:1em;margin-bottom:.5em;font-weight:bold;font-size:100%;page-break-after:avoid;text-align:left}#sbo-rt-content div.coverimage img{max-width:99%;max-height:99%}#sbo-rt-content .coverimage{margin-top:.2em;margin-bottom:.2em;text-align:center}#sbo-rt-content .indent{margin-top:.3em;margin-bottom:.3em;text-indent:1.3em}#sbo-rt-content .noindent{margin-top:.5em;margin-bottom:.5em;text-indent:0}#sbo-rt-content .bullet{margin-top:.6em;margin-bottom:.6em;text-indent:0}#sbo-rt-content .bullet-para{margin-top:.6em;margin-bottom:.6em;text-indent:0}#sbo-rt-content .copyright{margin-top:3.5em;margin-bottom:.5em;text-indent:0;font-size:.9em}#sbo-rt-content .copy{margin-top:1em;margin-bottom:.5em;text-indent:0}#sbo-rt-content .author{margin-top:.2em;margin-bottom:7.5em;text-align:center;font-weight:bold;font-size:1.2em}#sbo-rt-content .middle img{vertical-align:middle}#sbo-rt-content div.image img{max-width:99%;max-height:99%}#sbo-rt-content .image{margin-top:.42em;text-align:center}#sbo-rt-content .toc-fm{margin-top:.3em;margin-bottom:.3em;text-indent:0;margin-left:2em;text-align:left}#sbo-rt-content .toc-part{margin-top:1.3em;margin-bottom:.5em;text-indent:0;margin-left:.1em;text-align:left}#sbo-rt-content .toc-chap{margin-top:1em;margin-bottom:.5em;text-indent:0;margin-left:1em;text-align:left}#sbo-rt-content .toc-chap1{margin-top:1em;margin-bottom:.5em;text-indent:0;margin-left:.5em;text-align:left}#sbo-rt-content .toc-sec{margin-top:.2em;margin-bottom:.2em;margin-left:3.8em;text-indent:-2em;text-align:left}#sbo-rt-content .toc-bm{margin-top:1.3em;margin-bottom:.2em;text-indent:0;margin-left:1.8em;text-align:left}#sbo-rt-content .border{border-bottom:solid #58585A .1em}#sbo-rt-content .sidebarpara{margin-top:.5em;margin-bottom:.1em;margin-left:1em;text-align:left}#sbo-rt-content .indexmain{margin-top:.2em;margin-bottom:.2em;text-align:left;margin-left:.8em;text-indent:-.8em}#sbo-rt-content .indexsub{margin-top:.2em;margin-bottom:.2em;margin-left:2.5em;text-indent:-.8em;text-align:left}#sbo-rt-content a{text-decoration:none}#sbo-rt-content .heading{page-break-inside:avoid}#sbo-rt-content .all{border-top:black solid .1em;border-bottom:black solid .1em}#sbo-rt-content td{vertical-align:top}#sbo-rt-content table{width:100%;border-collapse:collapse}#sbo-rt-content ul{margin-top:1em;margin-bottom:1em;list-style-type:square}#sbo-rt-content ul.ul1{margin-top:1em;margin-bottom:1em;list-style-type:circle}#sbo-rt-content ul li p{margin-top:.5em;margin-bottom:.5em;color:#000;font-weight:normal}#sbo-rt-content ul li p.bullet{margin-top:.5em;margin-bottom:.5em;font-weight:normal}#sbo-rt-content .number{margin-top:.3em;margin-bottom:.3em;text-indent:0}#sbo-rt-content ol{margin-top:.8em;margin-bottom:.8em;margin-left:0;font-weight:normal}#sbo-rt-content ol li{color:#000;margin-top:.017em;margin-bottom:.017em}#sbo-rt-content ol.left{margin-top:.5em;margin-bottom:.5em;margin-left:2em;font-weight:normal}#sbo-rt-content ol li p{color:#000;font-weight:normal}#sbo-rt-content .blockquote{margin-top:.8em;margin-bottom:.8em;margin-left:2.5em;margin-right:2.5em;font-size:.9em}#sbo-rt-content .h3i{font-size:1.3em;margin-top:1em;margin-bottom:.3em;font-weight:bold;page-break-after:avoid;text-align:left}#sbo-rt-content .h3b{margin-top:1em;margin-bottom:1em;border-bottom:solid .01em;margin-left:.1em;font-weight:bold;text-align:left}#sbo-rt-content .pre{font-family:Courier New,monospace;font-size:.88em;margin-top:.5em;margin-bottom:.5em;margin-left:.1em;background-color:#F3F4F4;text-align:left;padding:.2em}#sbo-rt-content .prea{font-family:Courier New,monospace;font-size:.88em;margin-top:.8em;margin-bottom:.8em;margin-left:.2em;text-align:left}#sbo-rt-content .right{margin-top:1em;margin-bottom:1em;text-align:right;font-size:.9em}#sbo-rt-content figcaption{font-size:.9em;margin-top:.5em;margin-bottom:.1em;font-weight:normal;color:#000}#sbo-rt-content figure{margin-top:1em;margin-bottom:1em;margin-left:1.5em;margin-right:1.5em}#sbo-rt-content figure>img{max-width:99%;max-height:99%}#sbo-rt-content div.image-p img{max-width:99%;max-height:99%}#sbo-rt-content .image-p{page-break-before:always;text-align:center}#sbo-rt-content div.image-pa img{max-width:99%;max-height:99%}#sbo-rt-content .image-pa{text-align:center}#sbo-rt-content .codelink{font-size:.88em;margin-top:.5em;margin-bottom:.5em;font-weight:bold;page-break-after:avoid}#sbo-rt-content .notepara{margin-top:.5em;margin-bottom:.5em;text-indent:0;margin-left:1em;text-align:left}#sbo-rt-content .note-m{margin-top:1em;margin-bottom:1em;margin-left:1.3em;margin-right:1.3em;border-radius:.7em;padding:.5em;border:solid #F3C7CC .2em;background-color:#F7D6D9;page-break-after:avoid;page-break-inside:avoid}#sbo-rt-content .note-g{margin-top:1em;margin-bottom:1em;margin-left:1.3em;margin-right:1.3em;border-radius:.7em;padding:.5em;border:solid #C5E4CA .2em;background-color:#D5EBDA;page-break-after:avoid;page-break-inside:avoid}#sbo-rt-content .note-y{margin-top:1em;margin-bottom:1em;margin-left:1.3em;margin-right:1.3em;border-radius:.7em;padding:.5em;border:solid #FEB .2em;background-color:#FFF3CD;page-break-after:avoid;page-break-inside:avoid}#sbo-rt-content .note-b{margin-top:1em;margin-bottom:1em;margin-left:1.3em;margin-right:1.3em;border-radius:.7em;padding:.5em;border:solid #BDDAF2 .2em;background-color:#CFE4F6;page-break-after:avoid;page-break-inside:avoid}#sbo-rt-content .box-ash{margin-top:1em;margin-bottom:1em;margin-left:1.3em;margin-right:1.3em;border-radius:.7em;padding:.5em;border:solid #DDDEDF .15em;background-color:#F1F1F2;page-break-after:avoid;page-break-inside:avoid}#sbo-rt-content .footnote{margin-top:.5em;margin-bottom:.5em;margin-left:1em;text-indent:1em;text-align:left;font-size:.8em}#sbo-rt-content .footnotesb{font-size:.8em;margin-top:.5em;margin-bottom:.5em;margin-left:1.2em;text-indent:.8em;text-align:left}#sbo-rt-content .BoldItalic{font-family:courier New,monospace;font-weight:bold;font-style:italic}#sbo-rt-content .subtitle{margin-top:.1em;text-align:center;margin-bottom:2.5em;font-weight:bold;font-size:1.5em}#sbo-rt-content .publisher{margin-top:.2em;margin-bottom:.5em;text-align:center}#sbo-rt-content .address{margin-top:.1em;margin-bottom:.2em;text-align:center}#sbo-rt-content .ded{margin-top:6em;margin-bottom:.5em;margin-left:2em;margin-right:2em;text-align:center}#sbo-rt-content .pd_ash{color:#666}#sbo-rt-content .pd_red1{color:#CD5E27}#sbo-rt-content .pd_red{color:#ed1c24}#sbo-rt-content .pd_yellow{color:#A28951}#sbo-rt-content .pd_maroon{color:#721B24}#sbo-rt-content .pd_ora1{color:#C2A02E}#sbo-rt-content .pd_maroon1{color:#9d5a11}#sbo-rt-content .pd_green{color:#6D9878}#sbo-rt-content .pd_green1{color:#34b352}#sbo-rt-content .pd_blue{color:#035090}#sbo-rt-content .pd_blue2{color:#1224ff}#sbo-rt-content .pd_ash1{color:#939598}#sbo-rt-content .title{margin-top:.2em;margin-bottom:.2em;font-weight:bold;page-break-after:avoid;page-break-inside:avoid}#sbo-rt-content .box{margin-top:.8em;margin-bottom:.8em;margin-left:1.3em;margin-right:1.3em;border:solid #000 .15em;padding:.1em .5em .1em .5em}#sbo-rt-content .credit{margin-top:.5em;margin-bottom:.5em;margin-left:1.5em;text-indent:-1.5em}#sbo-rt-content .bordert{border-top:solid #919395 .1em;border-bottom:solid #919395 .1em}#sbo-rt-content .strike{text-decoration:line-through}#sbo-rt-content .tab-para{margin-top:.2em;margin-bottom:.2em;margin-left:1.2em;text-indent:-.8em}#sbo-rt-content .tab-para1{margin-top:.2em;margin-bottom:.2em;margin-left:.3em;text-indent:0}#sbo-rt-content .tab-right{margin-top:.2em;margin-bottom:.2em;margin-right:2em;text-indent:0;text-align:right}#sbo-rt-content .tab-center{margin-top:.2em;margin-bottom:.2em;text-indent:0;text-align:center}#sbo-rt-content .thead_right{margin-top:.2em;margin-bottom:.2em;margin-right:2em;text-indent:0;text-align:right}#sbo-rt-content .tab-right1{margin-top:.2em;margin-bottom:.2em;margin-left:0;text-indent:0;text-align:right}#sbo-rt-content .thead{margin-top:.2em;margin-bottom:.2em;margin-left:.4em;text-indent:0;text-align:left}#sbo-rt-content .theada{margin-top:.2em;margin-bottom:.2em;margin-left:0;text-indent:0;text-align:left}#sbo-rt-content .thead1{margin-top:.2em;margin-bottom:.2em;margin-right:1em;text-indent:0;text-align:right}#sbo-rt-content .tab-caption{font-size:.9em;margin-top:.5em;margin-bottom:.3em;font-weight:normal}#sbo-rt-content .tab-heading{margin-top:1em;margin-bottom:1em;page-break-inside:avoid}#sbo-rt-content .big{font-size:1.5em;color:#939598}#sbo-rt-content .hidden{display:none;visibility:hidden}</style><script> // <![CDATA[
+    var g = {
+      position_cache: {
+        
+          "chapter": "/api/v1/book/9780135159071/chapter/ch01.xhtml",
+          "book_id": "9780135159071",
+          "chapter_uri": "ch01.xhtml",
+          "position": 0,
+          "user_uuid": "84c171ee-4dd7-4bd0-a2bc-254287669aaa",
+          "next_chapter_uri": "/library/view/programming-skills-for/9780135159071/ch02.xhtml"
+        
+      },
+      title: "Programming Skills for Data Science: Start Writing Code to Wrangle, Analyze, and Visualize Data with R, First Edition",
+      author_list: "Michael Freeman, Joel Ross",
+      format: "book",
+      source: "application/epub+zip",
+      is_system_book: true,
+      is_public: false,
+      loaded_from_server: true,
+      allow_scripts: false,
+      has_mathml: false,
+      show_ios_app_teaser: false
+    };
+    // ]]></script><script src="Chapter7_files/modernizr.js"></script><script>
+    
+      
+
+      
+        
+          window.PUBLIC_ANNOTATIONS = true;
+        
+      
+
+      window.MOBILE_PUBLIC_ANNOTATIONS = false;
+
+    
+
+    
+      window.PRIVACY_CONTROL_OVERRIDE = false;
+    
+
+    
+      window.PRIVACY_CONTROL_SWITCH = true;
+    
+
+    
+      window.PUBLISHER_PAGES = true;
+    
+
+      window.SBO = {
+        "constants": {
+          "SITB_ENDPOINT": "/api/v2/sitb/",
+          "SEARCH_SELECT_ENDPOINT": "/api/v2/search/select/",
+          "ENABLE_ONLINE_TRAINING": false
+        }
+      };
+  </script><link rel="canonical" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch01.xhtml"><meta name="description" content="1 Setting Up Your Computer In order to write code to work with data, you will need to use a number of different (free) software programs for writing, executing, and ... "><meta property="og:title" content="1 Setting Up Your Computer"><meta itemprop="isPartOf" content="/library/view/programming-skills-for/9780135159071/"><meta itemprop="name" content="1 Setting Up Your Computer"><meta property="og:url" itemprop="url" content="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch01.xhtml"><meta property="og:site_name" content="Safari"><meta property="og:image" itemprop="thumbnailUrl" content="https://learning.oreilly.com/library/cover/9780135159071/"><meta property="og:description" itemprop="description" content="1 Setting Up Your Computer In order to write code to work with data, you will need to use a number of different (free) software programs for writing, executing, and ... "><meta itemprop="inLanguage" content="en"><meta itemprop="publisher" content="Addison-Wesley Professional"><meta property="og:type" content="book"><meta property="og:book:isbn" itemprop="isbn" content="9780135159071"><meta property="og:book:author" itemprop="author" content="Michael Freeman"><meta property="og:book:author" itemprop="author" content="Joel Ross"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@safari"><style type="text/css" id="font-styles" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-size: &lt;%= font_size %&gt; !important; }">#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-size: 0.9em !important; }</style><style type="text/css" id="font-family" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-family: &lt;%= font_family %&gt; !important; }"></style><style type="text/css" id="column-width" data-template="#sbo-rt-content { max-width: &lt;%= column_width %&gt;% !important; margin: 0 auto !important; }"></style><noscript><meta http-equiv="refresh" content="0; url=/library/no-js/" /></noscript><script type="text/javascript">
+    (function(i,s,o,g,r,a,m) {
+      i['GoogleAnalyticsObject']=r;
+      i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();
+      a=s.createElement(o),m=s.getElementsByTagName(o)[0];
+      a.async=1;
+      a.src=g;
+      m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    var matches = document.cookie.match(/BrowserCookie\s*=\s*([a-f0-9\-]{36})/),
+      user_uuid = null;
+
+    if (matches && matches.length === 2) {
+      user_uuid = matches[1];
+    }
+
+  
+    ga('create', 'UA-39299553-7', {'userId': '84c171ee-4dd7-4bd0-a2bc-254287669aaa' });
+  
+
+  
+    
+      ga('set', 'dimension1', 'B2B');
+    
+  
+
+  ga('set', 'dimension6', user_uuid);
+
+  
+    ga('set', 'dimension2', '84c171ee-4dd7-4bd0-a2bc-254287669aaa');
+    
+      ga('set', 'dimension7', '0014100001uibI4AAI');
+    
+  
+
+  
+
+  
+
+  //enable enhanced link tracking
+  ga('require', 'linkid', 'linkid.js');
+
+  // reading interface will track pageviews itself
+  if (document.location.pathname.indexOf("/library/view") !== 0) {
+    ga('send', 'pageview');
+  }
+  </script><script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5P4V6Z');
+  </script><script defer="defer" src="Chapter7_files/vendor.js"></script><script defer="defer" src="Chapter7_files/reader.js"></script><script async="" src="Chapter7_files/MathJax.js"></script><style id="annotator-dynamic-style">.annotator-adder, .annotator-outer, .annotator-notice {
+  z-index: 100019;
+}
+.annotator-filter {
+  z-index: 100009;
+}</style></head>
+
+
+<body class="reading sidenav  scalefonts library nav-collapsed">
+
+    
+  <noscript> 
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-5P4V6Z"
+            height="0" width="0"
+            style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+
+
+
+    
+      <div class="working hide" role="status">
+        <div class="working-image"></div>
+      </div>
+      <div class="sbo-site-nav">
+        
+
+
+
+
+
+<a href="#container" class="skip">Skip to content</a><header class="topbar t-topbar"><nav role="navigation" class="js-site-nav"><ul class="topnav"><li class="t-logo"><a href="https://learning.oreilly.com/home/" class="l0 None safari-home nav-icn js-keyboard-nav-home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>Safari Home Icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M4 9.9L4 9.9 4 18 16 18 16 9.9 10 4 4 9.9ZM2.6 8.1L2.6 8.1 8.7 1.9 10 0.5 11.3 1.9 17.4 8.1 18 8.7 18 9.5 18 18.1 18 20 16.1 20 3.9 20 2 20 2 18.1 2 9.5 2 8.7 2.6 8.1Z"></path><rect x="10" y="12" width="3" height="7"></rect><rect transform="translate(18.121320, 10.121320) rotate(-315.000000) translate(-18.121320, -10.121320) " x="16.1" y="9.1" width="4" height="2"></rect><rect transform="translate(2.121320, 10.121320) scale(-1, 1) rotate(-315.000000) translate(-2.121320, -10.121320) " x="0.1" y="9.1" width="4" height="2"></rect></g></svg><span>Safari Home</span></a></li><li><a href="https://learning.oreilly.com/r/" class="t-recommendations-nav l0 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>recommendations icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M50 25C50 18.2 44.9 12.5 38.3 11.7 37.5 5.1 31.8 0 25 0 18.2 0 12.5 5.1 11.7 11.7 5.1 12.5 0 18.2 0 25 0 31.8 5.1 37.5 11.7 38.3 12.5 44.9 18.2 50 25 50 31.8 50 37.5 44.9 38.3 38.3 44.9 37.5 50 31.8 50 25ZM25 3.1C29.7 3.1 33.6 6.9 34.4 11.8 30.4 12.4 26.9 15.1 25 18.8 23.1 15.1 19.6 12.4 15.6 11.8 16.4 6.9 20.3 3.1 25 3.1ZM34.4 15.6C33.6 19.3 30.7 22.2 27.1 22.9 27.8 19.2 30.7 16.3 34.4 15.6ZM22.9 22.9C19.2 22.2 16.3 19.3 15.6 15.6 19.3 16.3 22.2 19.2 22.9 22.9ZM3.1 25C3.1 20.3 6.9 16.4 11.8 15.6 12.4 19.6 15.1 23.1 18.8 25 15.1 26.9 12.4 30.4 11.8 34.4 6.9 33.6 3.1 29.7 3.1 25ZM22.9 27.1C22.2 30.7 19.3 33.6 15.6 34.4 16.3 30.7 19.2 27.8 22.9 27.1ZM25 46.9C20.3 46.9 16.4 43.1 15.6 38.2 19.6 37.6 23.1 34.9 25 31.3 26.9 34.9 30.4 37.6 34.4 38.2 33.6 43.1 29.7 46.9 25 46.9ZM27.1 27.1C30.7 27.8 33.6 30.7 34.4 34.4 30.7 33.6 27.8 30.7 27.1 27.1ZM38.2 34.4C37.6 30.4 34.9 26.9 31.3 25 34.9 23.1 37.6 19.6 38.2 15.6 43.1 16.4 46.9 20.3 46.9 25 46.9 29.7 43.1 33.6 38.2 34.4Z"></path></g></svg><span>Recommended</span></a></li><li><a href="https://learning.oreilly.com/playlists/" class="t-queue-nav l0 nav-icn None"><!--?xml version="1.0" encoding="UTF-8"?--><svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink"><!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch --><title>icon_Playlist_sml</title><desc>Created with Sketch.</desc><defs></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="icon_Playlist_sml" fill-rule="nonzero" fill="#000000"><g id="playlist-icon"><g id="Group-6"><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle></g><g id="Group-5" transform="translate(0.000000, 7.000000)"><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect></g><g id="Group-5-Copy" transform="translate(0.000000, 14.000000)"><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect></g></g></g></g></svg><span>
+               Playlists
+            </span></a></li><li class="search"><a href="#" class="t-search-nav trigger nav-icn l0" data-dropdown-selector=".searchbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>search icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M31.3 0C20.9 0 12.5 8.4 12.5 18.8 12.5 22.5 13.6 25.9 15.4 28.8L1.2 42.9C-0.4 44.5-0.4 47.2 1.2 48.8 2 49.6 3.1 50 4.2 50 5.2 50 6.3 49.6 7.1 48.8L21.2 34.6C24.1 36.5 27.5 37.5 31.3 37.5 41.6 37.5 50 29.1 50 18.8 50 8.4 41.6 0 31.3 0ZM31.3 31.3C24.4 31.3 18.8 25.6 18.8 18.8 18.8 11.9 24.4 6.3 31.3 6.3 38.1 6.3 43.8 11.9 43.8 18.8 43.8 25.6 38.1 31.3 31.3 31.3Z"></path></g></svg><span>Search</span></a></li><li class="usermenu dropdown"><a href="#" class="trigger l0 nav-icn nav-dropdown"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>navigation arrow</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M0.1 12.5L9.7 3.1C9.8 3 9.9 3 10 3 10.1 3 10.2 3 10.3 3.1L19.9 12.5C20 12.5 20 12.6 20 12.8 20 12.9 20 13 19.9 13L17 15.9C16.9 16 16.8 16 16.7 16 16.5 16 16.4 16 16.4 15.9L10 9.7 3.6 15.9C3.6 16 3.5 16 3.3 16 3.2 16 3.1 16 3 15.9L0.1 13C0 12.9 0 12.8 0 12.7 0 12.7 0 12.6 0.1 12.5Z"></path></g></svg><span>Expand Nav</span></a><div class="drop-content"><ul><li><a href="https://learning.oreilly.com/history/" class="t-recent-nav l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>recent items icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 0C11.2 0 0 11.2 0 25 0 38.8 11.2 50 25 50 38.8 50 50 38.8 50 25 50 11.2 38.8 0 25 0ZM6.3 25C6.3 14.6 14.6 6.3 25 6.3 35.4 6.3 43.8 14.6 43.8 25 43.8 35.4 35.4 43.8 25 43.8 14.6 43.8 6.3 35.4 6.3 25ZM31.8 31.5C32.5 30.5 32.4 29.2 31.6 28.3L27.1 23.8 27.1 12.8C27.1 11.5 26.2 10.4 25 10.4 23.9 10.4 22.9 11.5 22.9 12.8L22.9 25.7 28.8 31.7C29.2 32.1 29.7 32.3 30.2 32.3 30.8 32.3 31.3 32 31.8 31.5Z"></path></g></svg><span>History</span></a></li><li><a href="https://learning.oreilly.com/topics" class="t-topics-link l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 55" width="20" height="20" version="1.1" fill="#4A3C31"><desc>topics icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 55L50 41.262 50 13.762 25 0 0 13.762 0 41.262 25 55ZM8.333 37.032L8.333 17.968 25 8.462 41.667 17.968 41.667 37.032 25 46.538 8.333 37.032Z"></path></g></svg><span>Topics</span></a></li><li><a href="https://learning.oreilly.com/learning-paths/" class="l1 nav-icn t-learningpaths-nav js-toggle-menu-item"><!--?xml version="1.0" encoding="UTF-8"?--><svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink"><!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch --><title>Mask</title><desc>Created with Sketch.</desc><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path d="M0,16.0214227 C0,15.0387209 0.796453294,14.2411658 1.77779753,14.2411658 C2.75914177,14.2411658 3.55559506,15.0387209 3.55559506,16.0214227 C3.55559506,17.0041246 2.75914177,17.8016797 1.77779753,17.8016797 C0.796453294,17.8016797 0,17.0041246 0,16.0214227 Z M9.77788642,5.22914885 C8.9280992,5.72049977 7.84008711,5.42853763 7.34941499,4.57757479 C6.85874287,3.72661195 7.15030167,2.63709467 8.00008889,2.14574375 C8.84987611,1.65439282 9.9378882,1.94635496 10.4285603,2.7973178 C10.9192324,3.64828064 10.6276736,4.73779792 9.77788642,5.22914885 Z M4.57213969,7.35869225 C5.42192691,7.85004318 5.71348571,8.93956046 5.22281359,9.79052329 C4.73214147,10.6414861 3.64412938,10.9334483 2.79434216,10.4420974 C1.94455494,9.95074642 1.65299614,8.86122915 2.14366826,8.01026631 C2.63434038,7.15930347 3.72235247,6.86734132 4.57213969,7.35869225 Z M2.79434216,21.6007481 C3.64412938,21.1093972 4.73214147,21.4013594 5.22281359,22.2523222 C5.71348571,23.103285 5.42192691,24.1928023 4.57213969,24.6841532 C3.72235247,25.1755042 2.63434038,24.883542 2.14366826,24.0325792 C1.65299614,23.1816163 1.94455494,22.0920991 2.79434216,21.6007481 Z M7.34941499,27.4652707 C7.84008711,26.6143079 8.9280992,26.3223457 9.77788642,26.8136966 C10.6276736,27.3050476 10.9192324,28.3945649 10.4285603,29.2455277 C9.9378882,30.0964905 8.84987611,30.3884527 8.00008889,29.8971017 C7.15030167,29.4057508 6.85874287,28.3162335 7.34941499,27.4652707 Z M18.7118524,11.3165596 C21.3074367,12.8173162 22.1963355,16.1392758 20.6976522,18.738451 C19.1989689,21.3358459 15.8815987,22.2259744 13.2860143,20.726998 C10.6922077,19.2262414 9.80330893,15.9042818 11.3002144,13.3051066 C12.7988978,10.7059314 16.116268,9.81580294 18.7118524,11.3165596 Z M26.7821642,27.8093944 L30.1315348,31.1633985 C30.3982044,31.4304371 30.2097579,31.8844026 29.8346426,31.8844026 L21.5945511,31.8844026 C21.1287681,31.8844026 20.751875,31.5069881 20.751875,31.0405608 L20.751875,22.7890697 C20.751875,22.4134355 21.2052134,22.2247282 21.4701052,22.4899865 L24.2843587,25.3081333 C26.8337204,23.0240636 28.4444049,19.7092251 28.4444049,16.0223129 C28.4444049,9.15052091 22.8621207,3.56051397 15.9998222,3.56051397 L15.9998222,0 C24.8230314,0 32,7.18689745 32,16.0223129 C32,20.6919269 29.9750886,24.8790914 26.7821642,27.8093944 Z" id="Mask" fill="#8B889A"></path></g></svg><span>Learning Paths</span></a></li><li class="nav-highlights"><a href="https://learning.oreilly.com/u/84c171ee-4dd7-4bd0-a2bc-254287669aaa/" class="t-highlights-nav l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 35" width="20" height="20" version="1.1" fill="#4A3C31"><desc>highlights icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M13.325 18.071L8.036 18.071C8.036 11.335 12.36 7.146 22.5 5.594L22.5 0C6.37 1.113 0 10.632 0 22.113 0 29.406 3.477 35 10.403 35 15.545 35 19.578 31.485 19.578 26.184 19.578 21.556 17.211 18.891 13.325 18.071L13.325 18.071ZM40.825 18.071L35.565 18.071C35.565 11.335 39.86 7.146 50 5.594L50 0C33.899 1.113 27.5 10.632 27.5 22.113 27.5 29.406 30.977 35 37.932 35 43.045 35 47.078 31.485 47.078 26.184 47.078 21.556 44.74 18.891 40.825 18.071L40.825 18.071Z"></path></g></svg><span>Highlights</span></a></li><li><a href="https://learning.oreilly.com/u/preferences/" class="t-settings-nav l1 js-settings nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"></path></g></svg><span>Settings</span></a></li><li><a href="https://www.oreilly.com/online-learning/support/" class="l1 no-icon">Support</a></li><li><a href="https://learning.oreilly.com/accounts/logout/" class="l1 no-icon">Sign Out</a></li></ul><ul class="profile"><li><a href="https://learning.oreilly.com/u/preferences/" class="l2 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"></path></g></svg><span>Settings</span></a></li><li><a href="https://www.oreilly.com/online-learning/support/" class="l2">Support</a></li><li><a href="https://learning.oreilly.com/accounts/logout/" class="l2">Sign Out</a></li></ul></div></li></ul></nav></header>
+
+
+      </div>
+      <div id="container" class="application" style="height: auto;">
+        
+          <div class="nav-container clearfix">
+            
+
+
+            
+            
+          </div>
+
+          
+
+  <div class="js-toc">
+    
+      <div class="sbo-reading-menu sbo-menu-top"><section class="sbo-toc-container toc-menu"><a href="#" class="sbo-toc-thumb"><span class="sbo-title ss-list"><h1><div class="visuallyhidden">Table of Contents for </div>
+      
+      Programming Skills for Data Science: Start Writing Code to Wrangle, Analyze, and Visualize Data with R, First Edition
+      
+    </h1></span></a><div class="toc-contents" style="max-height: 0px;" tabindex="-1">
+  <div class="sbo-toc ">
+    <button type="button" class="sbo-toc-thumb close"><div class="visuallyhidden">Close</div></button>
+      <section class="ios-app-teaser">
+        <ul>
+            <li><a class="js-toc-link toc-link" href="https://itunes.apple.com/gb/app/safari-queue-library-over/id881697395?mt=8" role="button">Install App</a></li>
+            <li><a class="js-toc-link toc-link" href="safaridetail://9780135159071" role="button">Open in App</a></li>
+        </ul>
+      </section>
+      <div class="sbo-book-meta">
+        
+        <span class="cover">
+         <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/">
+          <img src="Chapter7_files/a.jpg" alt="Cover image for Programming Skills for Data Science: Start Writing Code to Wrangle, Analyze, and Visualize Data with R, First Edition" width="139" height="184">
+        </a>
+        </span>
+        <span class="title">
+          
+            
+                <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/publisher/addison-wesley-professional/">
+                  <img src="Chapter7_files/addison-wesley.png" class="publisher-logo video" alt="publisher logo">
+                </a>
+            
+          
+
+          <a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/">Programming Skills for Data Science: Start Writing Code to Wrangle, Analyze, and Visualize Data with R, First Edition</a>
+        </span>
+        
+        <span class="authors">by Michael Freeman; Joel Ross</span>
+        
+
+        
+        <span class="publishers t-publishers">Published by
+          <!-- Show publisher page link if publisher pages switch is on -->
+          
+            <a class="t-publisher-link toc-link js-toc-link" href="https://learning.oreilly.com/library/publisher/addison-wesley-professional/">
+              Addison-Wesley Professional</a>, 2018
+          
+        </span>
+        
+
+    
+
+    </div>
+  <ol class="tocList">
+    
+    
+    
+     
+
+     <li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/cover.xhtml">
+        Cover Page <span class="minutes">(01:09 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/pref00.xhtml">
+        About This E-Book <span class="minutes">(01:09 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/title.xhtml">
+        Title Page <span class="minutes">(01:09 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/copyright.xhtml">
+        Copyright Page <span class="minutes">(01:09 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ded01.xhtml">
+        Dedication Page <span class="minutes">(01:09 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/toc.xhtml">
+        Contents <span class="minutes">(03:27 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/pref02.xhtml">
+        Foreword <span class="minutes">(01:09 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/pref03.xhtml">
+        Preface <span class="minutes">(09:12 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/pref04.xhtml">
+        Acknowledgments <span class="minutes">(01:09 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/pref05.xhtml">
+        About the Authors <span class="minutes">(01:09 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/part01.xhtml">
+        I Getting Started <span class="minutes">(01:09 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+     <ul class="toc-level-2">
+     
+
+     <li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch01.xhtml">
+        1 Setting Up Your Computer <span class="minutes">(11:30 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch02.xhtml#ch02">
+        2 Using the Command Line 
+       </a>
+      
+        
+      
+    
+    
+    </li></ul>
+    
+     
+
+     </li><li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/part02.xhtml">
+        II Managing Projects <span class="minutes">(01:09 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+     <ul class="toc-level-2">
+     
+
+     <li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch03.xhtml#ch03">
+        3 Version Control with git and GitHub 
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch04.xhtml#ch04">
+        4 Using Markdown for Documentation 
+       </a>
+      
+        
+      
+    
+    
+    </li></ul>
+    
+     
+
+     </li><li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/part03.xhtml">
+        III Foundational R Skills <span class="minutes">(01:09 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+     <ul class="toc-level-2">
+     
+
+     <li class="toc-level2 currently-reading">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch05.xhtml#ch05">
+        5 Introduction to R 
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch06.xhtml#ch06">
+        6 Functions 
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07.xhtml#ch07">
+        7 Vectors 
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch08.xhtml#ch08">
+        8 Lists 
+       </a>
+      
+        
+      
+    
+    
+    </li></ul>
+    
+     
+
+     </li><li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/part04.xhtml">
+        IV Data Wrangling <span class="minutes">(01:09 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+     <ul class="toc-level-2">
+     
+
+     <li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch09.xhtml#ch09">
+        9 Understanding Data 
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch10.xhtml#ch10">
+        10 Data Frames 
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch11.xhtml#ch11">
+        11 Manipulating Data with dplyr 
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch12.xhtml#ch12">
+        12 Reshaping Data with tidyr 
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch13.xhtml#ch13">
+        13 Accessing Databases 
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch14.xhtml#ch14">
+        14 Accessing Web APIs 
+       </a>
+      
+        
+      
+    
+    
+    </li></ul>
+    
+     
+
+     </li><li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/part05.xhtml">
+        V Data Visualization <span class="minutes">(01:09 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+     <ul class="toc-level-2">
+     
+
+     <li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch15.xhtml#ch15">
+        15 Designing Data Visualizations 
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch16.xhtml#ch16">
+        16 Creating Visualizations with ggplot2 
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch17.xhtml#ch17">
+        17 Interactive Visualization in R 
+       </a>
+      
+        
+      
+    
+    
+    </li></ul>
+    
+     
+
+     </li><li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/part06.xhtml">
+        VI Building and Sharing Applications <span class="minutes">(01:09 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+     <ul class="toc-level-2">
+     
+
+     <li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch18.xhtml#ch18">
+        18 Dynamic Reports with R Markdown 
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch19.xhtml#ch19">
+        19 Building Interactive Web Applications with Shiny 
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch20.xhtml#ch20">
+        20 Working Collaboratively 
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch21.xhtml#ch21">
+        21 Moving Forward 
+       </a>
+      
+        
+      
+    
+    
+    </li></ul>
+    
+     
+
+     </li><li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/index.xhtml">
+        Index <span class="minutes">(32:12 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/app01.xhtml">
+        Credits <span class="minutes">(04:36 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/pref03_images.xhtml#pref03_images">
+        Code Snippets 
+       </a>
+      
+        
+      
+   </li></ol>
+ </div>
+
+
+
+</div></section></div>
+
+    
+
+    <div class="interface-controls interface-controls-top">
+      <ul class="interface-control-btns js-bitlist js-reader">
+        <li class="js-search-in-archive search-in-archive t-search-in-archive"><a href="#" title="Search in archive" class="js-search-controls search-controls"><span class="icon">Search in book...</span></a><form class="search-archive-bar js-search-form"><input type="search" name="query" placeholder="Search inside this book..." autocomplete="off"></form><div class="search-archive-results"><div class="js-sitb-results-region"></div></div></li><li class="queue-control"><div class="js-content-uri" data-content-uri="/api/v1/book/9780135159071/chapter/ch01.xhtml"><div class="js-collections-dropdown collections-dropdown menu-bit-cards"><div data-reactroot="" class="menu-dropdown-wrapper js-menu-dropdown-wrapper align-right"><img class="hidden" src="Chapter7_files/ajax-transp.gif" alt="loading spinner"><div class="menu-control"><div class="control "><div class="js-playlists-menu"><button class="js-playlist-icon"><svg class="icon-add-to-playlist-sml" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill-rule="nonzero" fill="#000000"><g transform="translate(-1.000000, 0.000000)"><rect x="5" y="0" width="12" height="2"></rect><title>Playlists</title><path d="M4.5,14 C6.43299662,14 8,12.4329966 8,10.5 C8,8.56700338 6.43299662,7 4.5,7 C2.56700338,7 1,8.56700338 1,10.5 C1,12.4329966 2.56700338,14 4.5,14 Z M2.5,10 L4,10 L4,8.5 L5,8.5 L5,10 L6.5,10 L6.5,11 L5,11 L5,12.5 L4,12.5 L4,11 L2.5,11 L2.5,10 Z"></path><circle cx="2" cy="5" r="1"></circle><circle cx="1.94117647" cy="1" r="1"></circle><rect x="5" y="4" width="12" height="2"></rect><rect x="9" y="8" width="8" height="2"></rect><rect x="9" y="12" width="8" height="2"></rect></g></g></g></svg><div class="js-playlist-addto-label">Add&nbsp;To</div></button></div></div></div></div></div></div></li><li class="js-font-control-panel font-control-activator"><a href="#" data-push-state="false" id="font-controls" title="Change font size" aria-label="Change font size"><span class="icon">Toggle Font Controls</span></a></li><li class="dropdown sharing-controls"><a href="#" class="trigger" data-push-state="false" title="Share" aria-label="Share"><i class="fa fa-share"></i></a><ul class="social-sharing dropdown-menu"><li class=""><a class="twitter share-button t-twitter" target="_blank" aria-label="Share this section on Twitter" title="Share this section on Twitter" href="https://twitter.com/share?url=https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch01.xhtml&amp;text=Programming%20Skills%20for%20Data%20Science%3A%20Start%20Writing%20Code%20to%20Wrangle%2C%20Analyze%2C%20and%20Visualize%20Data%20with%20R%2C%20First%20Edition&amp;via=safari"><span>Twitter</span></a></li><li class=""><a class="facebook share-button t-facebook" target="_blank" aria-label="Share this section on Facebook" title="Share this section on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch01.xhtml"><span>Facebook</span></a></li><li class=""><a class="googleplus share-button t-googleplus" target="_blank" aria-label="Share this secton on Google Plus" title="Share this secton on Google Plus" href="https://plus.google.com/share?url=https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch01.xhtml"><span>Google Plus</span></a></li><li class=""><a class="email share-button t-email" aria-label="Share this section via email" title="Share this section via email" href="mailto:?subject=Safari: 1%20Setting%20Up%20Your%20Computer&amp;body=https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch01.xhtml%0D%0Afrom Programming%20Skills%20for%20Data%20Science%3A%20Start%20Writing%20Code%20to%20Wrangle%2C%20Analyze%2C%20and%20Visualize%20Data%20with%20R%2C%20First%20Edition%0D%0A"><span>Email</span></a></li></ul></li>
+      </ul>
+    </div>
+
+    <section role="document">
+	  <div class="t-sbo-prev sbo-prev sbo-nav-top">
+  
+    
+      
+        <a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch06.xhtml" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">6 Functions</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-top">
+  
+    
+      
+        <a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch08.xhtml" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">8 Lists</div>
+        </a>
+    
+  
+  </div>
+
+
+
+<div id="sbo-rt-content"><div class="annotator-wrapper"><h2 class="h2" id="ch07"><span epub:type="pagebreak" id="page_81"></span><span class="big">7</span><br>Vectors</h2>
+<p class="noindent">As you move from practicing <code>R</code> basics to
+ interacting with data, you will need to understand how that data is 
+stored, and to carefully consider the appropriate structure for the 
+organization, analysis, and visualization of your data. This chapter 
+covers the foundational concepts for working with vectors in <code>R</code>. Vectors are <em>the</em> fundamental data type in <code>R</code>, so understanding these concepts is key to effectively programming in the language. This chapter discusses how <code>R</code> stores information in vectors, the way in which operations are executed in <em>vectorized</em> form, and how to extract data from vectors.</p>
+<div class="heading">
+<h3 class="h3" id="sec7_1">7.1 What Is a Vector?</h3>
+<p class="noindent"><strong>Vectors</strong> are <em>one-dimensional collections of values</em> that are all stored in a single variable. For example, you can make a vector <code>people</code> that contains the character strings “Sarah”, “Amit”, and “Zhang”. Alternatively, you could make a vector <code>one_to_seventy</code> that stores the numbers from 1 to 70. Each value in a vector is referred to as an <strong>element</strong> of that vector; thus the <code>people</code> vector would have three elements: <code>"Sarah"</code>, <code>"Amit"</code>, and <code>"Zhang"</code>.</p>
+</div>
+<div class="note-y">
+<p class="title">Remember</p>
+<p class="notepara">All the elements in a vector need to have the same <em>type</em> (e.g., numeric, character, logical). You can’t have a vector whose elements include both numbers and character strings.</p>
+</div>
+<div class="heading">
+<h4 id="sec7_1_1">7.1.1 Creating Vectors</h4>
+<p class="noindent">The easiest and most common syntax for creating vectors is to use the built-in <code><strong>c()</strong></code> function, which is used to <em><strong>c</strong>ombine</em> values into a vector. The <code>c()</code> function takes in any number of <strong>arguments</strong> of the same type (separated by commas as usual), and <strong>returns</strong> a vector that contains those elements:</p>
+</div>
+<p class="codelink"><a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07_images.xhtml#p0081-01a" id="p0081-01">Click here to view code image</a></p>
+<pre class="pre"><span class="pd_maroon1"># Use the `c()` function to create a vector of character values</span>
+people &lt;- <span class="pd_blue"><strong>c</strong></span>(<span class="pd_green1">"Sarah"</span>, <span class="pd_green1">"Amit"</span>, <span class="pd_green1">"Zhang"</span>)
+<span class="pd_blue"><strong>print</strong></span>(people)
+<span class="pd_maroon1"># [1] "Sarah" "Amit" "Zhang"</span>
+<span epub:type="pagebreak" id="page_82"></span><span class="pd_maroon1"># Use the `c()` function to create a vector of numeric values</span>
+numbers &lt;- <span class="pd_blue"><strong>c</strong></span>(<span class="pd_blue">1</span>, <span class="pd_blue">2</span>, <span class="pd_blue">3</span>, <span class="pd_blue">4</span>, <span class="pd_blue">5</span>)
+<span class="pd_blue"><strong>print</strong></span>(numbers)
+<span class="pd_maroon1"># [1] 1 2 3 4 5</span></pre>
+<p class="noindent">When you print out a variable in <code>R</code>, the interpreter prints out a <code>[1]</code> <em>before</em> the value you have stored in your variable. This is <code>R</code> telling you that it is printing from the <em>first</em> element in your vector (more on element indexing later in this chapter). When <code>R</code> prints a vector, it prints the elements separated with spaces (technically <em>tabs</em>), not commas.</p>
+<p class="noindent">You can use the <code><strong>length()</strong></code> function to determine how many <strong>elements</strong> are in a vector:</p>
+<p class="codelink"><a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07_images.xhtml#p0082-02a" id="p0082-02">Click here to view code image</a></p>
+<pre class="pre"><span class="pd_maroon1"># Create and measure the length of a vector of character elements</span>
+people &lt;- <span class="pd_blue"><strong>c</strong></span>(<span class="pd_green1">"Sarah"</span>, <span class="pd_green1">"Amit"</span>, <span class="pd_green1">"Zhang"</span>)
+people_length &lt;- <span class="pd_blue"><strong>length</strong></span>(people)
+<span class="pd_blue"><strong>print</strong></span>(people_length)
+<span class="pd_maroon1"># [1] 3</span>
+
+<span class="pd_maroon1"># Create and measure the length of a vector of numeric elements</span>
+numbers &lt;- <span class="pd_blue"><strong>c</strong></span>(<span class="pd_blue">1</span>, <span class="pd_blue">2</span>, <span class="pd_blue">3</span>, <span class="pd_blue">4</span>, <span class="pd_blue">5</span>)
+<span class="pd_blue"><strong>print</strong></span>(<span class="pd_blue"><strong>length</strong></span>(numbers))
+<span class="pd_maroon1"># [1] 5</span></pre>
+<p class="noindent">Other functions can also help with creating vectors. For example, the <code><strong>seq()</strong></code> function mentioned in <a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch06.xhtml#ch06">Chapter 6</a>
+ takes two arguments and produces a vector of the integers between them.
+ An optional third argument specifies how many numbers to skip in each 
+step:</p>
+<p class="codelink"><a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07_images.xhtml#p0082-03a" id="p0082-03">Click here to view code image</a></p>
+<pre class="pre"><span class="pd_maroon1"># Use the `seq()` function to create a vector of numbers 1 through 70
+# (inclusive)</span>
+one_to_seventy &lt;- <span class="pd_blue"><strong>seq</strong></span>(<span class="pd_blue">1</span>, <span class="pd_blue">70</span>)
+<span class="pd_blue"><strong>print</strong></span>(one_to_seventy)
+<span class="pd_maroon1"># [1] 1 2 3 4 5 .....</span>
+
+<span class="pd_maroon1"># Make vector of numbers 1 through 10, counting by 2</span>
+odds &lt;- <span class="pd_blue"><strong>seq</strong></span>(<span class="pd_blue">1</span>, <span class="pd_blue">10</span>, <span class="pd_blue">2</span>)
+<span class="pd_blue"><strong>print</strong></span>(odds)
+<span class="pd_maroon1"># [1] 1 3 5 7 9</span></pre>
+<p class="noindent">As a shorthand, you can produce a sequence with the <strong>colon operator</strong> (<code><strong>a:b</strong></code>), which returns a vector from <code>a</code> to <code>b</code> with the element values being incremented by <code>1</code>:</p>
+<p class="codelink"><a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07_images.xhtml#p0082-04a" id="p0082-04">Click here to view code image</a></p>
+<pre class="pre"><span class="pd_maroon1"># Use the colon operator (:) as a shortcut for the `seq()` function</span>
+one_to_seventy &lt;- <span class="pd_blue">1</span><span class="pd_red1"><strong>:</strong></span><span class="pd_blue">70</span></pre>
+<p class="noindent">When you print out <code>one_to_seventy</code> (as in <a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07.xhtml#fig7_1">Figure 7.1</a>), in addition to the leading <code>[1]</code>
+ that you’ve seen in all printed results, there are bracketed numbers at
+ the start of each line. These bracketed numbers tell you the starting 
+position (<strong>index</strong>) of elements printed on that line. Thus the <code>[1]</code> means that the printed line shows elements starting at element number <code>1</code>, a <code>[28]</code> means that the printed line shows elements starting at element number <code>28</code>, and so on. This information is <span epub:type="pagebreak" id="page_83"></span>intended
+ to help make the output more readable, so you know where in the vector 
+you are when looking at a printed line of elements.</p>
+<figure id="fig7_1">
+<img src="Chapter7_files/07fig01.jpg" aria-describedby="alt_07fig01" alt="A screenshot shows the creation of a vector using the seq() function and using the vector as an argument to print." data-mfp-src="/library/view/programming-skills-for/9780135159071/graphics/07fig01.jpg" width="775" height="182">
+<figcaption><span class="pd_ash">Figure 7.1</span> Creating a vector using the <code>seq()</code> function and printing the results in the RStudio terminal.
+<aside class="hidden" id="alt_07fig01">
+<p>In the console, the statement at the top reads, # Create a vector 
+holding the values 1 through 70 using the 'seq()' function. The first 
+line of command reads, one_to_seventy &lt;-seq(1, 70). The second line 
+of command reads, print (one_to_seventy). The output reads, [1] 1 2 3 4 5
+ 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 [28] 28 
+29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 
+53 54 [55] 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70.</p>
+</aside>
+</figcaption>
+</figure>
+<div class="heading">
+<h3 class="h3" id="sec7_2">7.2 Vectorized Operations</h3>
+<p class="noindent">When performing operations (such as mathematical operations <code>+</code>, <code>-</code>, and so on) on vectors, the operation is applied to vector elements <strong>element-wise</strong>.
+ This means that each element from the first vector operand is modified 
+by the element in the same corresponding position in the second vector 
+operand. This will produce the value at the corresponding position of 
+the resulting vector. In other words, if you want to add two vectors, 
+then the value of the first element in the result will be the sum of the
+ first elements in each vector, the second element in the result will be
+ the sum of the second elements in each vector, and so on.</p>
+</div>
+<p class="noindent"><a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07.xhtml#fig7_2">Figure 7.2</a> demonstrates the <em>element-wise</em> nature of the vectorized operations shown in the following code:</p>
+<p class="codelink"><a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07_images.xhtml#p0083-01a" id="p0083-01">Click here to view code image</a></p>
+<pre class="pre"><span class="pd_maroon1"># Create two vectors to combine</span>
+v1 &lt;- <span class="pd_blue"><strong>c</strong></span>(<span class="pd_blue">3</span>, <span class="pd_blue">1</span>, <span class="pd_blue">4</span>, <span class="pd_blue">1</span>, <span class="pd_blue">5</span>)
+v2 &lt;- <span class="pd_blue"><strong>c</strong></span>(<span class="pd_blue">1</span>, <span class="pd_blue">6</span>, <span class="pd_blue">1</span>, <span class="pd_blue">8</span>, <span class="pd_blue">0</span>)
+
+<span class="pd_maroon1"># Create arithmetic combinations of the vectors</span>
+v1 <span class="pd_red1"><strong>+</strong></span> v2 <span class="pd_maroon1"># returns 4 7 5 9 5</span>
+v1 <span class="pd_red1"><strong>-</strong></span> v2 <span class="pd_maroon1"># returns 2 -5 3 -7 5</span>
+v1 <span class="pd_red1"><strong>*</strong></span> v2 <span class="pd_maroon1"># returns 3 6 4 8 0</span>
+v1 <span class="pd_red1"><strong>/</strong></span> v2 <span class="pd_maroon1"># returns 3 0.167 4 0.125 Inf</span>
+
+<span class="pd_maroon1"># Add a vector to itself (why not?)</span>
+v3 &lt;- v2 <span class="pd_red1"><strong>+</strong></span> v2 <span class="pd_maroon1"># returns 2 12 2 16 0</span>
+
+<span class="pd_maroon1"># Perform more advanced arithmetic!</span>
+v4 &lt;- (v1 <span class="pd_red1"><strong>+</strong></span> v2) <span class="pd_red1"><strong>/</strong></span> (v1 <span class="pd_red1"><strong>+</strong></span> v1) <span class="pd_maroon1"># returns 0.67 3.5 0.625 4.5 0.5</span></pre>
+<figure id="fig7_2">
+<img src="Chapter7_files/07fig02.jpg" aria-describedby="alt_07fig02" alt="A figure depicts the element-wise nature of the vectorized operations." data-mfp-src="/library/view/programming-skills-for/9780135159071/graphics/07fig02.jpg" width="480" height="392">
+<figcaption><span class="pd_ash">Figure 7.2</span> Vector operations are applied <em>element-wise</em>: the first element in the resulting vector (<code>v3</code>) is the sum of the first element in the first vector (<code>v1</code>) and the first element in the second vector (<code>v2</code>).
+<aside class="hidden" id="alt_07fig02">
+<p>The figure shows three vectors, v1 equals c(2, 1, 4, 1, 5), v2 equals
+ c(1, 6, 1, 8, 0), and v3 equals v1 plus v2. The diagrammatic 
+representation shows the elements of the vectors arranged in a stack 
+like structure from top to bottom that reads, v3 (left) includes 4, 7, 
+5, 9, and 5; v1 (middle) includes 3, 1, 4, 1, and 5; and v2 (right) 
+includes 1, 6, 1, 8, and 0. The diagrammatic representation shows v1 
+plus v2 equals v3.</p>
+</aside>
+</figcaption>
+</figure>
+<p class="noindent">Vectors support any operators that apply to their 
+“type” (i.e., numeric or character). While you can’t apply mathematical 
+operators (namely, <code>+</code>) to combine vectors of character strings, you can use functions like <code>paste()</code> to concatenate the elements of two vectors, as described in <a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07.xhtml#sec7_2_3">Section 7.2.3</a>.</p>
+<div class="heading">
+<h4 id="sec7_2_1"><span epub:type="pagebreak" id="page_84"></span>7.2.1 Recycling</h4>
+<p class="noindent"><strong>Recycling</strong> refers to what <code>R</code> does in cases when there are an unequal number of elements in two operand vectors. If <code>R</code> is tasked with performing a vectorized operation with two vectors of unequal length, it will reuse (<em>recycle</em>) elements from the shorter vector. For example:</p>
+</div>
+<p class="codelink"><a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07_images.xhtml#p0084-01a" id="p0084-01">Click here to view code image</a></p>
+<pre class="pre"><span class="pd_maroon1"># Create vectors to combine</span>
+v1 &lt;- <span class="pd_blue"><strong>c</strong></span>(<span class="pd_blue">1</span>, <span class="pd_blue">3</span>, <span class="pd_blue">5</span>, <span class="pd_blue">1</span>, <span class="pd_blue">5</span>)
+v2 &lt;- <span class="pd_blue"><strong>c</strong></span>(<span class="pd_blue">1</span>, <span class="pd_blue">2</span>)
+
+<span class="pd_maroon1"># Add vectors</span>
+v3 &lt;- v1 <span class="pd_red1"><strong>+</strong></span> v2 <span class="pd_maroon1"># returns 2 5 6 3 6</span></pre>
+<p class="noindent">In this example, <code>R</code> first combined the elements in the first position of each vector (<code>1 + 1 = 2</code>). Then, it combined elements from the second position (<code>3 + 2 = 5</code>). When it got to the third element (which was present only in <code>v1</code>), it went back to the <em>beginning</em> of <code>v2</code> to select a value, yielding <code>5 + 1 = 6</code>. This recycling is illustrated in <a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07.xhtml#fig7_3">Figure 7.3</a>.</p>
+<figure id="fig7_3">
+<img src="Chapter7_files/07fig03.jpg" aria-describedby="alt_07fig03" alt="A figure depicts the recycling of values in the vector addition operation." data-mfp-src="/library/view/programming-skills-for/9780135159071/graphics/07fig03.jpg" width="480" height="393">
+<figcaption><span epub:type="pagebreak" id="page_85"></span><span class="pd_ash">Figure 7.3</span> Recycling values in vector addition. If one vector is shorter than another (e.g., <code>v2</code>), the values will be repeated (<em>recycled</em>) to match the length of the longer vector. Recycled values are <span class="pd_red1">in red</span>.
+<aside class="hidden" id="alt_07fig03">
+<p>The figure shows three vectors, v1 equals c(1, 3, 5, 1, 5), v2 equals
+ c(1, 2), and v3 equals v1 plus v2. The diagrammatic representation 
+shows the elements of the vectors arranged in a stack like structure 
+from top to bottom that reads, v3 (left) includes 2, 5, 6, 3, and 6; v1 
+(middle) includes 1, 3, 5, 1, and 5; and v2 (right) includes 1, 2, 1 
+(highlighted), 2 (highlighted), and 1 (highlighted). The highlighted 
+elements represent the recycled values.</p>
+</aside>
+</figcaption>
+</figure>
+<div class="note-y">
+<p class="title">Remember</p>
+<p class="notepara">Recycling will occur no matter whether the longer vector is the first or the second operand. In either case, <code>R</code>
+ will provide a warning message if the length of the longer vector is 
+not a multiple of the shorter (so that there would be elements “left 
+over” from recycling). This warning doesn’t necessarily mean you did 
+something wrong, but you should pay attention to it because it may be 
+indicative of an error (i.e., you thought the vectors were of the same 
+length, but made a mistake somewhere).</p>
+</div>
+<div class="heading">
+<h4 id="sec7_2_2">7.2.2 Most Everything Is a Vector!</h4>
+<p class="noindent">What happens if you try to add a vector and a “regular” single value (a <strong>scalar</strong>)?</p>
+</div>
+<p class="codelink"><a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07_images.xhtml#p0085-01a" id="p0085-01">Click here to view code image</a></p>
+<pre class="pre"><span class="pd_maroon1"># Add a single value to a vector of values</span>
+v1 &lt;- <span class="pd_blue">1</span><span class="pd_red1"><strong>:</strong></span><span class="pd_blue">5</span> <span class="pd_maroon1"># create vector of numbers 1 to 5</span>
+result &lt;- v1 <span class="pd_red1"><strong>+</strong></span> <span class="pd_blue">4</span> <span class="pd_maroon1"># add scalar to vector</span>
+<span class="pd_blue"><strong>print</strong></span>(result)
+<span class="pd_maroon1"># [1] 5 6 7 8 9</span></pre>
+<p class="noindent">As you can see (and probably expected), the operation added <code>4</code> to every element in the vector.</p>
+<p class="noindent">This sensible behavior occurs because <code>R</code>
+ stores all character, numeric, and boolean values as vectors. Even when
+ you thought you were creating a single value (a scalar), you were 
+actually creating a <span epub:type="pagebreak" id="page_86"></span>vector with a single element (length 1). When you create a variable storing the number <code>7</code> (e.g., with <code>x &lt;- 7</code>), <code>R</code> creates a vector of length 1 with the number <code>7</code> as that single element.</p>
+<p class="codelink"><a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07_images.xhtml#p0086-01a" id="p0086-01">Click here to view code image</a></p>
+<pre class="pre"><span class="pd_maroon1"># Confirm that basic types are stored in vectors</span>
+<span class="pd_blue"><strong>is.vector</strong></span>(<span class="pd_blue">18</span>) <span class="pd_maroon1"># TRUE</span>
+<span class="pd_blue"><strong>is.vector</strong></span>(<span class="pd_green1">"hello"</span>) <span class="pd_maroon1"># TRUE</span>
+<span class="pd_blue"><strong>is.vector</strong></span>(<span class="pd_maroon1">TRUE</span>) <span class="pd_maroon1"># TRUE</span></pre>
+<p class="noindent">This is why <code>R</code> prints the <code>[1]</code>
+ in front of all results: it’s telling you that it’s showing a vector 
+(which happens to have one element) starting at element number 1.</p>
+<p class="codelink"><a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07_images.xhtml#p0086-02a" id="p0086-02">Click here to view code image</a></p>
+<pre class="pre"><span class="pd_maroon1"># Create a vector of length 1 in a variable `x`</span>
+x &lt;- <span class="pd_blue">7</span> <span class="pd_maroon1"># equivalent to `x &lt;- c(7)`</span>
+
+<span class="pd_maroon1"># Print out `x`: R displays the vector index (1) in the console</span>
+<span class="pd_blue"><strong>print</strong></span>(x)
+<span class="pd_maroon1"># [1] 7</span></pre>
+<p class="noindent">This behavior explains why you can’t use the <code>length()</code> function to get the length of a character string; it just returns the length of the vector containing that string (which is <code>1</code>). Instead, you would use the <code>nchar()</code> function to get the number of characters in a character string.</p>
+<p class="noindent">Thus when you add a “scalar” such as <code>4</code> to a vector, what you’re really doing is adding a vector with a single element <code>4</code>.
+ As such, the same recycling principle applies, so that the single 
+element is recycled and applied to each element of the first operand.</p>
+<div class="heading">
+<h4 id="sec7_2_3">7.2.3 Vectorized Functions</h4>
+<p class="noindent">Because all basic data types are stored as vectors, 
+almost every function you’ve encountered so far in this book can be 
+applied to vectors, not just to single values. These <strong>vectorized functions</strong>
+ are both more idiomatic and efficient than non-vector approaches. You 
+will find that functions work the same way for vectors as they do for 
+single values, because single values are just instances of vectors!</p>
+</div>
+<p class="noindent">This means that you can use nearly any function on a
+ vector, and it will act in the same vectorized, element-wise manner: 
+the function will result in a new vector where the function’s 
+transformation has been applied to each individual element in order.</p>
+<p class="noindent">For example, consider the <code>round()</code> function described in <a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch06.xhtml#ch06">Chapter 6</a>. This function rounds the given argument to the nearest whole number (or number of decimal places if specified).</p>
+<p class="codelink"><a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07_images.xhtml#p0086-03a" id="p0086-03">Click here to view code image</a></p>
+<pre class="pre"><span class="pd_maroon1"># Round the number 1.67 to 1 decimal place</span>
+<span class="pd_blue"><strong>round</strong></span>(<span class="pd_blue">1.67</span>, <span class="pd_blue">1</span>) <span class="pd_maroon1"># returns 1.7</span></pre>
+<p class="noindent"><span epub:type="pagebreak" id="page_87"></span>But recall that the <code>1.67</code>
+ in the preceding example is actually a vector of length 1. If you 
+instead pass a vector containing multiple values as an argument, the 
+function will perform the same rounding on each element in the vector.</p>
+<p class="codelink"><a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07_images.xhtml#p0087-01a" id="p0087-01">Click here to view code image</a></p>
+<pre class="pre"><span class="pd_maroon1"># Create a vector of numbers</span>
+nums &lt;- <span class="pd_blue"><strong>c</strong></span>(<span class="pd_blue">3.98</span>, <span class="pd_blue">8</span>, <span class="pd_blue">10.8</span>, <span class="pd_blue">3.27</span>, <span class="pd_blue">5.21</span>)
+
+<span class="pd_maroon1"># Perform the vectorized operation</span>
+rounded_nums &lt;- <span class="pd_blue"><strong>round</strong></span>(nums, <span class="pd_blue">1</span>)
+
+<span class="pd_maroon1"># Print the results (each element is rounded)</span>
+<span class="pd_blue"><strong>print</strong></span>(rounded_nums)
+<span class="pd_maroon1"># [1]  4.0  8.0  10.8  3.3  5.2</span></pre>
+<p class="noindent">Vectorized operations such as these are also possible with character data. For example, the <code>nchar()</code>
+ function, which returns the number of characters in a string, can be 
+used equivalently for a vector of length 1 or a vector with many 
+elements inside of it:</p>
+<p class="codelink"><a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07_images.xhtml#p0087-02a" id="p0087-02">Click here to view code image</a></p>
+<pre class="pre"><span class="pd_maroon1"># Create a character variable `introduction`, then count the number
+# of characters</span>
+introduction &lt;- <span class="pd_green1">"Hello"</span>
+<span class="pd_blue"><strong>nchar</strong></span>(introduction) <span class="pd_maroon1"># returns 5</span>
+
+<span class="pd_maroon1"># Create a vector of `introductions`, then count the characters in
+# each element</span>
+introductions &lt;- <span class="pd_blue"><strong>c</strong></span>(<span class="pd_green1">"Hi"</span>, <span class="pd_green1">"Hello"</span>, <span class="pd_green1">"Howdy"</span>)
+<span class="pd_blue"><strong>nchar</strong></span>(introductions) <span class="pd_maroon1"># returns 2  5  5</span></pre>
+<div class="note-y">
+<p class="title">Remember</p>
+<p class="notepara">When you use a function on a vector, you’re using that function <em>on each item</em> in the vector!</p>
+</div>
+<p class="noindent">You can even use vectorized functions in which <em>each argument</em> is a vector. For example, the following code uses the <code>paste()</code> function to paste together elements in two different vectors. Just as the plus operator (<code>+</code>) performed element-wise addition, other vectorized functions such as <code>paste()</code> are also implemented element-wise:</p>
+<p class="codelink"><a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07_images.xhtml#p0087-03a" id="p0087-03">Click here to view code image</a></p>
+<pre class="pre"><span class="pd_maroon1"># Create a vector of two colors</span>
+colors &lt;- <span class="pd_blue"><strong>c</strong></span>(<span class="pd_green1">"Green"</span>, <span class="pd_green1">"Blue"</span>)
+
+<span class="pd_maroon1"># Create a vector of two locations</span>
+locations &lt;- <span class="pd_blue"><strong>c</strong></span>(<span class="pd_green1">"sky"</span>, <span class="pd_green1">"grass"</span>)
+
+<span class="pd_maroon1"># Use the vectorized paste() operation to paste together the vectors above</span>
+band &lt;- <span class="pd_blue"><strong>paste</strong></span>(colors, locations, <span class="pd_blue">sep =</span> <span class="pd_green1">""</span>) <span class="pd_maroon1"># returns "Greensky" "Bluegrass"</span></pre>
+<p class="noindent"><span epub:type="pagebreak" id="page_88"></span>Notice the same element-wise combination is occurring: the <code>paste()</code> function is applied to the first elements, then to the second elements, and so on.</p>
+<p class="noindent">This vectorization process is <em>extremely powerful</em>, and is a significant factor in what makes <code>R</code>
+ an efficient language for working with large data sets (particularly in
+ comparison to languages that require explicit iteration through 
+elements in a collection).<a id="ch07fn1a" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07.xhtml#ch07fn1" class="totri-footnote"><sup>1</sup></a> To write really effective <code>R</code> code, you will need to be comfortable applying functions to vectors of data, and getting vectors of data back as results.</p>
+<p class="footnote"><a id="ch07fn1" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07.xhtml#ch07fn1a" class="totri-footnote"><sup>1</sup></a><strong>Vectorization in</strong> <code><strong>R</strong></code><strong>: Why?</strong> is a blog post by Noam Ross with detailed discussion about the underlying mechanics of vectorization: <a href="http://www.noamross.net/blog/2014/4/16/vectorization-in-r--why.html">http://www.noamross.net/blog/2014/4/16/vectorization-in-r--why.html</a></p>
+<div class="box-ash">
+<p class="title">Going Further</p>
+<p class="sidebarpara">As with other programming languages, <code>R</code> does support explicit iteration in the form of <strong>loops</strong>. For example, if you wanted to take an action <em>for</em> each element in a vector, you could do that using a <code>for</code> loop. However, because operations are vectorized in <code>R</code>, there is no need to explicitly iterate through vectors. While you are able to write loops in <code>R</code>, they are almost entirely unnecessary for writing the language and therefore are not discussed in this text.</p>
+</div>
+<div class="heading">
+<h3 class="h3" id="sec7_3">7.3 Vector Indices</h3>
+<p class="noindent">Vectors are the fundamental structure for storing collections of data. Yet, you often want to work with just <em>some</em> of the data in a vector. This section discusses a few ways that you can get a <strong>subset</strong> of elements in a vector.</p>
+</div>
+<p class="noindent">The simplest way that you can refer to individual elements in a vector by their <strong>index</strong>, which is the number of their position in the vector. For example, in the vector</p>
+<p class="codelink"><a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07_images.xhtml#p0088-01a" id="p0088-01">Click here to view code image</a></p>
+<pre class="pre">vowels &lt;- <span class="pd_blue"><strong>c</strong></span>(<span class="pd_green1">"a"</span>, <span class="pd_green1">"e"</span>, <span class="pd_green1">"i"</span>, <span class="pd_green1">"o"</span>, <span class="pd_green1">"u"</span>)</pre>
+<p class="noindent">the <code>"a"</code> (the first element) is at index 1, <code>"e"</code> (the second element) is at index 2, and so on.</p>
+<div class="note-y">
+<p class="title">Remember</p>
+<p class="notepara">In <code>R</code>, vector elements are indexed starting with <code>1</code>. This is distinct from most other programming languages, which are <em>zero-indexed</em> and so reference the first element in a set at index <code>0</code>.</p>
+</div>
+<p class="noindent">You can retrieve a value from a vector using <strong>bracket notation</strong>.
+ With this approach, you refer to the element at a particular index of a
+ vector by writing the name of the vector, followed by square brackets (<code><strong>[]</strong></code>) that contain the index of interest:</p>
+<p class="codelink"><a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07_images.xhtml#p0088-02a" id="p0088-02">Click here to view code image</a></p>
+<pre class="pre"><span class="pd_maroon1"># Create the people vector</span>
+people &lt;- <span class="pd_blue"><strong>c</strong></span>(<span class="pd_green1">"Sarah"</span>, <span class="pd_green1">"Amit"</span>, <span class="pd_green1">"Zhang"</span>)
+
+<span class="pd_maroon1"># Access the element at index 1</span>
+first_person &lt;- people[<span class="pd_blue">1</span>]
+<span class="pd_blue"><strong>print</strong></span>(first_person)
+<span class="pd_maroon1"># [1] "Sarah"</span>
+
+<span epub:type="pagebreak" id="page_89"></span><span class="pd_maroon1"># Access the element at index 2</span>
+second_person &lt;- people[<span class="pd_blue">2</span>]
+<span class="pd_blue"><strong>print</strong></span>(second_person)
+<span class="pd_maroon1"># [1] "Amit"</span>
+
+<span class="pd_maroon1"># You can also use variables inside the brackets</span>
+last_index &lt;- <span class="pd_blue"><strong>length</strong></span>(people) <span class="pd_maroon1"># last index is the length of the vector!</span>
+last_person &lt;- people[last_index] <span class="pd_maroon1"># returns "Zhang"</span></pre>
+<div class="note-m">
+<p class="title">Caution</p>
+<p class="notepara">Don’t get confused by the <code>[1]</code> in the printed output. It doesn’t refer to which index you got from <code>people</code>, but rather to the index in the <em>extracted</em> result (e.g., stored in <code>second_person</code>) that is being printed!</p>
+</div>
+<p class="noindent">If you specify an index that is <strong>out-of-bounds</strong> (e.g., greater than the number of elements in the vector) in the square brackets, you will get back the special value <code>NA</code>, which stands for <strong>n</strong>ot <strong>a</strong>vailable. Note that this is <em>not</em> the character string <code>"NA"</code>, but rather a specific logical value.</p>
+<p class="codelink"><a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07_images.xhtml#p0089-02a" id="p0089-02">Click here to view code image</a></p>
+<pre class="pre"><span class="pd_maroon1"># Create a vector of vowels</span>
+vowels &lt;- <span class="pd_blue"><strong>c</strong></span>(<span class="pd_green1">"a"</span>, <span class="pd_green1">"e"</span>, <span class="pd_green1">"i"</span>, <span class="pd_green1">"o"</span>, <span class="pd_green1">"u"</span>)
+
+<span class="pd_maroon1"># Attempt to access the 10th element</span>
+vowels[<span class="pd_blue">10</span>] <span class="pd_maroon1"># returns NA</span></pre>
+<p class="noindent">If you specify a <strong>negative index</strong> in the square brackets, <code>R</code> will return all elements <em>except</em> the (negative) index specified:</p>
+<p class="codelink"><a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07_images.xhtml#p0089-03a" id="p0089-03">Click here to view code image</a></p>
+<pre class="pre">vowels &lt;- <span class="pd_blue"><strong>c</strong></span>(<span class="pd_green1">"a"</span>, <span class="pd_green1">"e"</span>, <span class="pd_green1">"i"</span>, <span class="pd_green1">"o"</span>, <span class="pd_green1">"u"</span>)
+
+<span class="pd_maroon1"># Return all elements EXCEPT that at index 2</span>
+all_but_e &lt;- vowels[<span class="pd_red1"><strong>-</strong></span><span class="pd_blue">2</span>]
+<span class="pd_blue"><strong>print</strong></span>(all_but_e)
+<span class="pd_maroon1"># [1] "a" "i" "o" "u"</span></pre>
+<div class="heading">
+<h4 id="sec7_3_1">7.3.1 Multiple Indices</h4>
+<p class="noindent">Recall that in <code>R</code>, all numbers are 
+stored in vectors. This means that when you specify an index by putting a
+ single number inside the square brackets, you’re actually putting a <em>vector containing a single element</em> into the brackets. In fact, what you’re really doing is specifying a <strong>vector of indices</strong> that you want <code>R</code> to extract from the vector. As such, you can put a vector of any length inside the brackets, and <code>R</code> will extract <em>all</em> the elements with those indices from the vector (producing a <strong>subset</strong> of the vector elements):</p>
+</div>
+<p class="codelink"><a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07_images.xhtml#p0089-04a" id="p0089-04">Click here to view code image</a></p>
+<pre class="pre"><span class="pd_maroon1"># Create a `colors` vector</span>
+colors &lt;- <span class="pd_blue"><strong>c</strong></span>(<span class="pd_green1">"red"</span>, <span class="pd_green1">"green"</span>, <span class="pd_green1">"blue"</span>, <span class="pd_green1">"yellow"</span>, <span class="pd_green1">"purple"</span>)
+
+<span class="pd_maroon1"># Vector of indices (to extract from the `colors` vector)</span>
+indices &lt;- <span class="pd_blue"><strong>c</strong></span>(<span class="pd_blue">1</span>, <span class="pd_blue">3</span>, <span class="pd_blue">4</span>)
+
+<span epub:type="pagebreak" id="page_90"></span><span class="pd_maroon1"># Retrieve the colors at those indices</span>
+extracted &lt;- colors[indices]
+<span class="pd_blue"><strong>print</strong></span>(extracted)
+<span class="pd_maroon1"># [1] "red" "blue" "yellow"</span>
+
+<span class="pd_maroon1"># Specify the index vector anonymously</span>
+others &lt;- colors[<span class="pd_blue"><strong>c</strong></span>(<span class="pd_blue">2</span>, <span class="pd_blue">5</span>)]
+<span class="pd_blue"><strong>print</strong></span>(others)
+<span class="pd_maroon1"># [1] "green" "purple"</span></pre>
+<p class="noindent">It’s common practice to use the <strong>colon operator</strong> to quickly specify a range of indices to extract:</p>
+<p class="codelink"><a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07_images.xhtml#p0090-02a" id="p0090-02">Click here to view code image</a></p>
+<pre class="pre"><span class="pd_maroon1"># Create a `colors` vector</span>
+colors &lt;- <span class="pd_blue"><strong>c</strong></span>(<span class="pd_green1">"red"</span>, <span class="pd_green1">"green"</span>, <span class="pd_green1">"blue"</span>, <span class="pd_green1">"yellow"</span>, <span class="pd_green1">"purple"</span>)
+
+<span class="pd_maroon1"># Retrieve values in positions 2 through 5</span>
+<span class="pd_blue"><strong>print</strong></span>(colors[<span class="pd_blue">2</span><span class="pd_red1"><strong>:</strong></span><span class="pd_blue">5</span>])
+<span class="pd_maroon1"># [1] "green" "blue" "yellow" "purple"</span></pre>
+<p class="noindent">This reads as “a vector of the elements in positions 2 through 5.”</p>
+<div class="heading">
+<h3 class="h3" id="sec7_4">7.4 Vector Filtering</h3>
+<p class="noindent">The previous examples used a vector of indices (<em>numeric</em> values) to retrieve a subset of elements from a vector. Alternatively, you can put a <strong>vector of logical (boolean) values</strong> (e.g., <code>TRUE</code> or <code>FALSE</code>) inside the square brackets to specify which elements you want to return—<code>TRUE</code> in the <em>corresponding position</em> means return that element and <code>FALSE</code> means don’t return that element:</p>
+</div>
+<p class="codelink"><a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07_images.xhtml#p0090-03a" id="p0090-03">Click here to view code image</a></p>
+<pre class="pre"><span class="pd_maroon1"># Create a vector of shoe sizes</span>
+shoe_sizes &lt;- <span class="pd_blue"><strong>c</strong></span>(<span class="pd_blue">5.5</span>, <span class="pd_blue">11</span>, <span class="pd_blue">7</span>, <span class="pd_blue">8</span>, <span class="pd_blue">4</span>)
+
+<span class="pd_maroon1"># Vector of booleans (to filter the `shoe_sizes` vector)</span>
+filter &lt;- <span class="pd_blue"><strong>c</strong></span>(<span class="pd_maroon1">TRUE</span>, <span class="pd_maroon1">FALSE</span>, <span class="pd_maroon1">FALSE</span>, <span class="pd_maroon1">FALSE</span>, <span class="pd_maroon1">TRUE</span>)
+
+<span class="pd_maroon1"># Extract every element in an index that is TRUE</span>
+<span class="pd_blue"><strong>print</strong></span>(shoe_sizes[filter])
+<span class="pd_maroon1"># [1]  5.5 4</span></pre>
+<p class="noindent">R will go through the boolean vector and extract every item at the same position as a <code>TRUE</code>. In the preceding example, since <code>filter</code> is <code>TRUE</code> at indices 1 and 5, then <code>shoe_sizes[filter]</code> returns a vector with the elements from indices 1 and 5.</p>
+<p class="noindent">This may seem a bit strange, but it is actually 
+incredibly powerful because it lets you select elements from a vector 
+that meet a certain criteria—a process called <strong>filtering</strong>. You perform this <strong>filtering operation</strong>
+ by first creating a vector of boolean values that correspond with the 
+indices meeting that criteria, and then put that filter vector inside 
+the square brackets to return the values of interest:</p>
+<p class="codelink"><span epub:type="pagebreak" id="page_91"></span><a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07_images.xhtml#p0091-01a" id="p0091-01">Click here to view code image</a></p>
+<pre class="pre"><span class="pd_maroon1"># Create a vector of shoe sizes</span>
+shoe_sizes &lt;- <span class="pd_blue"><strong>c</strong></span>(<span class="pd_blue">5.5</span>, <span class="pd_blue">11</span>, <span class="pd_blue">7</span>, <span class="pd_blue">8</span>, <span class="pd_blue">4</span>)
+
+<span class="pd_maroon1"># Create a boolean vector that indicates if a shoe size is less than 6.5</span>
+shoe_is_small &lt;- shoe_sizes <span class="pd_red1"><strong>&lt;</strong></span> <span class="pd_blue">6.5</span> <span class="pd_maroon1"># returns T F F F T</span>
+
+<span class="pd_maroon1"># Use the `shoe_is_small` vector to select small shoes</span>
+small_shoes &lt;- shoe_sizes[shoe_is_small] <span class="pd_maroon1"># returns 5.5 4</span></pre>
+<p class="noindent">The magic here is that you are once again using recycling: the relational operator <code>&lt;</code> is vectorized, meaning that the shorter vector (<code>6.5</code>) is recycled and applied to each element in the <code>shoe_sizes</code> vector, thus producing the boolean vector that you want!</p>
+<p class="noindent">You can even combine the second and third lines of code into a single statement. You can think of the following as saying <code>shoe_sizes</code> <em><strong>where</strong></em> <code>shoe_sizes</code> <em>is less than 6.5</em>:</p>
+<p class="codelink"><a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07_images.xhtml#p0091-02a" id="p0091-02">Click here to view code image</a></p>
+<pre class="pre"><span class="pd_maroon1"># Create a vector of shoe sizes</span>
+shoe_sizes &lt;- <span class="pd_blue"><strong>c</strong></span>(<span class="pd_blue">5.5</span>, <span class="pd_blue">11</span>, <span class="pd_blue">7</span>, <span class="pd_blue">8</span>, <span class="pd_blue">4</span>)
+
+<span class="pd_maroon1"># Select shoe sizes that are smaller than 6.5</span>
+shoe_sizes[shoe_sizes <span class="pd_red1"><strong>&lt;</strong></span> <span class="pd_blue">6.5</span>] <span class="pd_maroon1"># returns 5.5 4</span></pre>
+<p class="noindent">This is a valid statement because the expression inside of the square brackets (<code>shoe_sizes &lt; 6.5</code>) is evaluated first, producing a boolean vector (a vector of <code>TRUEs</code> and <code>FALSEs</code>) that is then used to filter the <code>shoe_sizes</code> vector. <a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07.xhtml#fig7_4">Figure 7.4</a> diagrams this evaluation. This kind of filtering is crucial for being able to ask real-world questions of data sets.</p>
+<figure id="fig7_4">
+<img src="Chapter7_files/07fig04.jpg" aria-describedby="alt_07fig04" alt="A figure depicts the demonstration of vector filtering using the relational operators." data-mfp-src="/library/view/programming-skills-for/9780135159071/graphics/07fig04.jpg" width="473" height="430">
+<figcaption><span class="pd_ash">Figure 7.4</span> A demonstration of vector filtering using relational operators. The value <code>6</code> is recycled to match the length of the <code>shoe_sizes</code> vector. The resulting boolean values are used to filter the vector.
+<aside class="hidden" id="alt_07fig04">
+<p>The diagram represents the expression shoe_sizes[shoe_sizes lesser 
+than 6.5]. The value returned by the expression is stored in the vector 
+small_shoes. The shoe_sizes vector has the elements 5.5, 11, 7, 8, and 
+4. The expression shoe_sizes lesser than 6 is represented using a vector
+ with five elements, and all the elements are 6. It is shown that each 
+of the five elements of the vector shoe_size is compared to the vector 
+representing that expression, that is, each element is compared to a 6. 
+The returned value, small_shoes, has two elements: 5.5 and 6. The output
+ of the vector with relational values (true or false) is as follows: T F
+ F F T.</p>
+</aside>
+</figcaption>
+</figure>
+<div class="heading">
+<h3 class="h3" id="sec7_5"><span epub:type="pagebreak" id="page_92"></span>7.5 Modifying Vectors</h3>
+<p class="noindent">Most operations applied to vectors will create a <em>new</em> vector with the modified values. This is the most common process you will use in <code>R</code>. However, it is also possible to manipulate the contents of an existing vector in various ways.</p>
+</div>
+<p class="noindent">You can assign an element at a particular vector index a <em>new value</em> by specifying the index on the <em>left-hand side</em> of the operation:</p>
+<p class="codelink"><a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07_images.xhtml#p0092-01a" id="p0092-01">Click here to view code image</a></p>
+<pre class="pre"><span class="pd_maroon1"># Create a vector `prices`</span>
+prices &lt;- <span class="pd_blue"><strong>c</strong></span>(<span class="pd_blue">25</span>, <span class="pd_blue">28</span>, <span class="pd_blue">30</span>)
+
+<span class="pd_maroon1"># Change the first price to 20</span>
+prices[<span class="pd_blue">1</span>] &lt;- <span class="pd_blue">20</span>
+<span class="pd_blue"><strong>print</strong></span>(prices)
+<span class="pd_maroon1"># [1] 20 28 30</span></pre>
+<p class="noindent">To create a new element in your vector, you need to specify the index in which you want to store the new value:</p>
+<p class="codelink"><a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07_images.xhtml#p0092-02a" id="p0092-02">Click here to view code image</a></p>
+<pre class="pre"><span class="pd_maroon1"># Create a vector `prices`</span>
+prices &lt;- <span class="pd_blue"><strong>c</strong></span>(<span class="pd_blue">25</span>, <span class="pd_blue">28</span>, <span class="pd_blue">30</span>)
+
+<span class="pd_maroon1"># Add a fourth price</span>
+prices[<span class="pd_blue">4</span>] &lt;- <span class="pd_blue">32</span>
+
+<span class="pd_maroon1"># Add a new price (35) to the end of the vector</span>
+new_index &lt;- <span class="pd_blue"><strong>length</strong></span>(prices) <span class="pd_red1"><strong>+</strong></span> <span class="pd_blue">1</span> <span class="pd_maroon1"># the "end" is 1 after the last element</span>
+prices[new_index] &lt;- <span class="pd_blue">35</span></pre>
+<p class="noindent">Of course, there’s no reason that you can’t select 
+multiple elements on the left-hand side and assign them multiple values.
+ The assignment operator is also vectorized!</p>
+<p class="codelink"><a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07_images.xhtml#p0092-03a" id="p0092-03">Click here to view code image</a></p>
+<pre class="pre"><span class="pd_maroon1"># Create a vector of school supplies</span>
+school_supplies &lt;- <span class="pd_blue"><strong>c</strong></span>(<span class="pd_green1">"Backpack"</span>, <span class="pd_green1">"Laptop"</span>, <span class="pd_green1">"Pen"</span>)
+
+<span class="pd_maroon1"># Replace "Laptop" with "Tablet", and "Pen" with "Pencil"</span>
+school_supplies[ <span class="pd_blue"><strong>c</strong></span>(<span class="pd_blue">2</span>, <span class="pd_blue">3</span>)] &lt;- <span class="pd_blue"><strong>c</strong></span>(<span class="pd_green1">"Tablet"</span>, <span class="pd_green1">"Pencil"</span>)</pre>
+<p class="noindent">If you try to modify an element at an index that is greater than the length of the vector, <code>R</code> will fill the vector with <code>NA</code> values:</p>
+<p class="codelink"><a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07_images.xhtml#p0092-04a" id="p0092-04">Click here to view code image</a></p>
+<pre class="pre"><span class="pd_maroon1"># Create a vector `prices`</span>
+prices &lt;- <span class="pd_blue"><strong>c</strong></span>(<span class="pd_blue">25</span>, <span class="pd_blue">28</span>, <span class="pd_blue">30</span>)
+
+<span class="pd_maroon1"># Set the sixth element in the vector to have the value 60</span>
+prices[<span class="pd_blue">6</span>] &lt;- <span class="pd_blue">60</span>
+<span class="pd_blue"><strong>print</strong></span>(prices)
+<span class="pd_maroon1"># [1] 25 28 30 NA NA 60</span></pre>
+<p class="noindent"><span epub:type="pagebreak" id="page_93"></span>Since keeping track of indices can be difficult (and may easily change with your data, making the code <em>fragile</em>), a better approach for adding information at the end of a vector is to create a new vector by <strong>c</strong>ombining an existing vector with new elements(s):</p>
+<p class="codelink"><a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07_images.xhtml#p0093-01a" id="p0093-01">Click here to view code image</a></p>
+<pre class="pre"><span class="pd_maroon1"># Use the combine (`c()`) function to create a vector</span>
+people &lt;- <span class="pd_blue"><strong>c</strong></span>(<span class="pd_green1">"Sarah"</span>, <span class="pd_green1">"Amit"</span>, <span class="pd_green1">"Zhang"</span>)
+
+<span class="pd_maroon1"># Use the `c()` function to combine the `people` vector and the name "Josh"</span>
+more_people &lt;- <span class="pd_blue"><strong>c</strong></span>(people, <span class="pd_green1">"Josh"</span>)
+<span class="pd_blue"><strong>print</strong></span>(more_people)
+<span class="pd_maroon1"># [1] "Sarah" "Amit" "Zhang" "Josh"</span></pre>
+<p class="noindent">Finally, vector modification can be combined with <em>vector filtering</em>
+ to allow you to replace a specific subset of values. For example, you 
+could replace all values in a vector that were greater than 10 with the 
+number 10 (to “cap” the values). Because the assignment operator is 
+vectorized, you can leverage recycling to assign a single value to each 
+element that has been filtered from the vector:</p>
+<p class="codelink"><a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07_images.xhtml#p0093-02a" id="p0093-02">Click here to view code image</a></p>
+<pre class="pre"><span class="pd_maroon1"># Create a vector of values</span>
+v1 &lt;- <span class="pd_blue"><strong>c</strong></span>(<span class="pd_blue">1</span>, <span class="pd_blue">5</span>, <span class="pd_blue">55</span>, <span class="pd_blue">1</span>, <span class="pd_blue">3</span>, <span class="pd_blue">11</span>, <span class="pd_blue">4</span>, <span class="pd_blue">27</span>)
+
+<span class="pd_maroon1"># Replace all values greater than 10 with 10</span>
+v1[v1 <span class="pd_red1"><strong>&gt;</strong></span> <span class="pd_blue">10</span>] &lt;- <span class="pd_blue">10</span> <span class="pd_maroon1"># returns 1 5 10 1 3 10 4 10</span></pre>
+<p class="noindent">In this example, the number <code>10</code> gets recycled for each element in which <code>v1</code> is greater than 10 (<code>v1[v1 &gt; 10]</code>).</p>
+<p class="noindent">This technique is particularly powerful when 
+wrangling and cleaning data, as it will allow you to identify and 
+manipulate invalid values or other outliers.</p>
+<p class="noindent">Overall, vectors provide a powerful way of 
+organizing and grouping data for analysis, and will be used throughout 
+your programming with <code>R</code>. For practice working with vectors in <code>R</code>, see the set of accompanying book exercises.<a id="ch07fn2a" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07.xhtml#ch07fn2" class="totri-footnote"><sup>2</sup></a><span epub:type="pagebreak" id="page_94"></span></p>
+<p class="footnote"><a id="ch07fn2" href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch07.xhtml#ch07fn2a" class="totri-footnote"><sup>2</sup></a><strong>Vector exercises:</strong> <a href="https://github.com/programming-for-data-science/chapter-07-exercises">https://github.com/programming-for-data-science/chapter-07-exercises</a></p>
+<div class="annotator-outer annotator-viewer viewer annotator-hide">
+  <ul class="annotator-widget annotator-listing"></ul>
+</div><div class="annotator-modal-wrapper annotator-editor-modal annotator-editor annotator-hide">
+	<div class="annotator-outer editor">
+		<h2 class="title">Highlight</h2>
+		<form class="annotator-widget">
+			<ul class="annotator-listing">
+			<li class="annotator-item"><textarea id="annotator-field-7" placeholder="Add a note using markdown (optional)" class="js-editor" maxlength="750"></textarea></li></ul>
+			<div class="annotator-controls">
+				<a class="link-to-markdown" href="https://daringfireball.net/projects/markdown/basics" target="_blank">?</a>
+				<ul>
+					<li class="delete annotator-hide"><a href="#delete" class="annotator-delete-note button positive">Delete Note</a></li>
+					<li class="save"><a href="#save" class="annotator-save annotator-focus button positive">Save Note</a></li>
+					<li class="cancel"><a href="#cancel" class="annotator-cancel button">Cancel</a></li>
+				</ul>
+			</div>
+		</form>
+	</div>
+</div><div class="annotator-modal-wrapper annotator-delete-confirm-modal" style="display: none;">
+  <div class="annotator-outer">
+    <h2 class="title">Highlight</h2>
+      <a class="js-close-delete-confirm annotator-cancel close" href="#close">Close</a>
+      <div class="annotator-widget">
+         <div class="delete-confirm">
+            Are you sure you want to permanently delete this note?
+         </div>
+         <div class="annotator-controls">
+            <a href="#cancel" class="annotator-cancel button js-cancel-delete-confirm">No, I changed my mind</a>
+            <a href="#delete" class="annotator-delete button positive js-delete-confirm">Yes, delete it</a>
+         </div>
+       </div>
+   </div>
+</div><div class="annotator-adder" style="display: none;">
+	<ul class="adders">
+		
+		<li class="copy"><a href="#">Copy</a></li>
+		
+		<li class="add-highlight"><a href="#">Add Highlight</a></li>
+		<li class="add-note"><a href="#">
+			Add Note
+		</a></li>
+		
+	</ul>
+</div></div></div>
+
+
+
+  <div class="t-sbo-prev sbo-prev sbo-nav-bottom">
+  
+    
+      
+        <a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch06.xhtml" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">6 Functions</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-bottom">
+  
+    
+      
+        <a href="https://learning.oreilly.com/library/view/programming-skills-for/9780135159071/ch08.xhtml" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">8 Lists</div>
+        </a>
+    
+  
+  </div>
+
+</section>
+  </div>
+<section class="sbo-saved-archives"></section>
+
+
+
+          
+          
+  
+
+
+
+
+    
+    
+
+
+
+        
+      </div>
+      
+
+
+
+
+  <footer class="pagefoot">
+    <a href="#" class="icon-up" style="display: none;"><div class="visuallyhidden">Back to top</div></a>
+    <ul class="js-footer-nav">
+      <li class="full-support"><a href="https://www.oreilly.com/online-learning/support/">Support</a></li>
+      <li><a href="https://www.oreilly.com/online-learning/apps.html">Get the App</a></li>
+      
+        <li><a href="https://learning.oreilly.com/accounts/logout/">Sign Out</a></li>
+      
+    </ul>
+    <span class="copyright">© 2019 <a href="https://learning.oreilly.com/" target="_blank">Safari</a>.</span>
+    <a href="https://learning.oreilly.com/terms/">Terms of Service</a> /
+    <a href="https://learning.oreilly.com/membership-agreement/">Membership Agreement</a> /
+    <a href="https://www.oreilly.com/privacy.html">Privacy Policy</a>
+  </footer>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"licenseKey":"510f1a6865","errorBeacon":"bam.nr-data.net","applicationID":"3275661,67267027,67267028","transactionName":"YgdaZ0NSW0cEB0RdWltNfkZfUEFdCgofXFBHDVYdR1pQQxZeRl1QQj1aWkU=","beacon":"bam.nr-data.net","queueTime":8,"applicationTime":444,"agent":""}</script>
+
+
+    
+    <script src="Chapter7_files/a" charset="utf-8"></script>
+    <script src="Chapter7_files/a_002" charset="utf-8"></script>
+  
+
+<div class="annotator-notice"></div><div class="font-flyout" style="top: 200.567px; left: 943px;"><div class="font-controls-panel">
+	<div class="nightmodes">
+		<ul>
+			<li class="day"><a href="#" id="day-mode" title="Day Mode">
+				<i class="fa fa-sun-o"></i>
+				<span>Day Mode</span></a></li>
+			<li class="cloudy"><a href="#" id="cloudy-mode" title="Cloudy Mode">
+				<i class="fa fa-cloud"></i>
+				<span>Cloud Mode</span>
+			</a></li>
+			<li class="night"><a href="#" id="night-mode" title="Night Mode">
+				<i class="fa fa-moon-o"></i>
+				<span>Night Mode</span>
+			</a></li>
+		</ul>
+	</div>
+
+	<div class="font-resizer resizer">
+		<div class="draggable-containment-wrapper">
+			<i class="fa fa-font left"></i>
+			<span class="filler" style="width: 50%;"></span>
+			<div id="js-font-size-draggable" class="draggable ui-widget-content ui-draggable ui-draggable-handle" style="position: relative; left: 80px;"></div>
+			<i class="fa fa-font right"></i>
+		</div>
+	</div>
+
+	<div class="column-resizer resizer">
+		<div class="draggable-containment-wrapper">
+			<i class="fa fa-compress left"></i>
+			<span class="filler" style="width: 50%;"></span>
+			<div id="js-column-size-draggable" class="draggable ui-widget-content ui-draggable ui-draggable-handle" style="position: relative; left: 80px;"></div>
+			<i class="fa fa-expand right"></i>
+		</div>
+	</div>
+
+	<a id="reset" class="button" href="#">Reset</a>
+</div>
+</div></body></html>

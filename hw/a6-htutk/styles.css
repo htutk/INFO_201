@@ -1,0 +1,10 @@
+img {
+  /*size: 4in 6in portrait;*/
+  width: 100px;
+  height: auto;
+}
+
+embed {
+  width: 100px;
+  height: auto;
+}

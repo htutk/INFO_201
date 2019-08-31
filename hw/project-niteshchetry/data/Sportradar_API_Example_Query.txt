@@ -1,0 +1,3 @@
+https://api.sportradar.us/mlb/trial/v6.5/en/games/2019/05/01/boxscore.json?api_key={api_key}
+
+Note: Return format is json file. The api_key has to be requested.

@@ -1,0 +1,143 @@
+---
+title: "Midpoint Deliverable"
+author: "Joo Cha, Nitesh Chetry, Alex Htut, Gregory Ketron"
+date: "May 20, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE, echo=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE)
+source("scripts/plot1.R")
+source("scripts/plot2.R")
+source("scripts/plot3.R") 
+source("scripts/table.R")
+source("scripts/summary.R")
+library("knitr")
+library("dplyr")
+library("kableExtra")
+
+folder <- "data/baseballdatabank-2019.2/core"
+allstar <- read.csv(
+  paste0(folder, "/AllstarFull.csv"),
+  stringsAsFactors = FALSE
+)
+
+college <- read.csv(
+  paste0(folder, "/CollegePlaying.csv"),
+  stringsAsFactors = FALSE
+)
+
+school <- read.csv(
+  paste0(folder, "/Schools.csv"),
+  stringsAsFactors = FALSE
+)
+
+batting <- read.csv(
+  paste0(folder, "/Batting.csv"),
+  stringsAsFactors = FALSE
+)
+
+salary <- read.csv(
+  paste0(folder, "/Salaries.csv"),
+  stringsAsFactors = FALSE
+)
+
+position <- read.csv(
+  paste0(folder, "/Fielding.csv"),
+  stringsAsFactors = FALSE
+)
+
+player <- read.csv(
+  paste0(folder, "/People.csv"),
+  stringsAsFactors = FALSE
+)
+
+team_stats <- read.csv(
+  paste0(folder, "/Teams.csv"),
+  stringsAsFactors = FALSE
+)
+
+franchises <- read.csv(
+  paste0(folder, "/TeamsFranchises.csv"),
+  stringsAsFactors = FALSE
+)
+
+awards <- read.csv(
+  paste0(folder, "/AwardsPlayers.csv"),
+  stringsAsFactors = FALSE
+)
+```
+
+## Introduction
+
+Baseball is the most data-driven sport in the world today and has a rich recorded history of statistics. Sabermetrics to aid managerial decision-making has exploded in recent years and the methods used to evaluate players have become increasingly complex, making it a fascinating game to explore. The goal of any franchise's front office should be to minimize performance volatility and maximize wins. While baseball far transcends dollar signs and analytics for fans, it is nonetheless a business that must be treated as such to effectively generate winning seasons. Among other things, our report sheds light on responsible benchmarks for player salaries, the richest recruiting epicenters for MLB scouts, and some of the stats most critical for a campaign that will endure through October. The data used to support our analysis is drawn from the Sean Lahman online database, a repository featuring an array of .csv files with records across two centuries. 
+
+## Summary paragaph
+```{r mvp_summary}
+mvp <- mvp_summary(awards, player, salary, college)
+al_mvp <- mvp[1, ]
+nl_mvp <- mvp[2, ]
+```
+We will be analyzing 2017's league MVP's in this summary. In the plots below, we examine how important colleges and salaries are important for a team's success. Here, we ask how important they are to a player's performance. 
+
+Last year American League MVP was `r paste(al_mvp$nameFirst, al_mvp$nameLast)` and he made \$`r al_mvp$salary` in `r al_mvp$yearID.y`. In comparison, National League MVP, `r paste(nl_mvp$nameFirst, nl_mvp$nameLast)`, made \$`r nl_mvp$salary` in `r nl_mvp$yearID.y`. Surprisingly, none of them went to college in U.S. (as indicted by `r al_mvp$schoolID` value while analyzing the college players). We will be analyzing more of similar concepts in the final deliverable.
+
+## World Series Winners Since 2000
+
+A leading objective of our analysis is to identify the most impactful statistics in the game and determine performance threshholds that can predict certain degrees of success, both on an individual and team level. Our insights mimic the research scouts and front office employees use to make major budgeting decisions across the league, and the following table is an excellent example of precedence influencing this management. Below is a list of World Series champions since 2000 and their corresponding hitting, pitching, and fielding statistics. 
+
+Table 1: World Series Winners Since 2000
+
+```{r winners_this_century, echo=FALSE, warning=FALSE}
+winners_this_century <- table(team_stats, franchises)
+kable(winners_this_century) %>%
+  kable_styling(bootstrap_options = c("striped", "hover")) %>% 
+  add_header_above(c(" ", " ", " ", " ", " ", " ", " ", "Hitting" = 4, "Pitching & Fielding" = 4))
+```
+
+Every World Series winner in the last 19 years has had a team batting average above .250 and an ERA under 4.75. While it is clear that some squads had stronger pitching staffs and others rode the coattails of their offense, fielding percentages were almost identical across the board. There are myriad ways to win a championship, but stats like FP, OBP, and WHIP demand a certain level of consistency to enable a title run.
+
+## American All-Stars by Cities
+In this section, we will be analyzing all-star players since 2000 and the cities that they went to college for. The purpose of the chart below is to help the recruiters to scout talents in more "productive" cities.
+
+
+Both size and color of the dots encode the same parameter: the total number of all-stars produced. Regions such as SEC and ACC seem to produce more talents compared to other regions. California is also a notable candidate in that it has produced the most number of all-stars state-wise.
+```{r plot1, echo=FALSE, warning=FALSE}
+# load the data frames from csv files
+allstar_plot(allstar, college, school)
+```
+Fig. 1: Visualization of All-Star Talents by Cities
+
+
+This plot is important in our project since scouting is a big part of a team's future success. By knowing where to scout, the budget can be better spent for maximum efficiency.
+
+
+In the final product, we are hoping to make the year selectable, add more options such as batting averages, home runs, etc., and modify the map to give the states-summary.
+
+## Top 100 players(in salary) to batting average
+```{r salary_to_ba, echo=FALSE, warning=FALSE}
+salary_to_ba(batting, position, salary, player)
+```
+Fig. 2: Top 100 Highest-paid Players' Salaries and Their Batting Average.
+
+This scatter plot is to describe the relationship between players' salary
+and their batting average(this is _hit_ divided by _At bat_). Note that only 
+top 100 highest-paid players in MLB from 2016 season are shown.
+
+From this chart, we can see that _Daniel Murphy_ was one of the most
+underrated players in MLB with an annual salary of $8 million. His BA was
+about 0.35 in 2016 season.
+
+## Player Salary Distribution
+```{r plot3}
+get_salary_plot(salary)
+```
+
+Fig. 3: Visualization of distribution of baseball player salaries in Major
+League Baseball for the year 2016. 
+
+As with any sport, baseball has some top players that are valued higher than others. It is interesting to see how this is visualized the distribution of player salaries. This plot is heavily grouped in the bottom, visualizing that most
+players made less than $10 million that year in salary. On the top end of the
+spectrum, the highest earners made upwards of $30 million in salary during 2016.
+There is clearly a wide range of player salaries in the year 2016, a few players
+made significantly more in salary than the majority of other players.
